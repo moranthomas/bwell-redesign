@@ -1,2 +1,2 @@
 # bwell-redesign
-This is the develop branch
+This repo is for the newly developed bwell site
