@@ -1,0 +1,11 @@
+.navbar_custom
+{
+    background: #2c2c2c;
+    position: fixed;
+    visibility: visible;
+}
+
+.custom_padding
+{
+   padding-top: 100px;
+}
