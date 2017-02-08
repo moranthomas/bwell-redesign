@@ -1,0 +1,460 @@
+.bwell-navbar {
+    position: relative;
+    width: 100%;
+}
+
+.bwell-navbar:before {
+    content: "";
+    display: block;
+}
+
+.bwell-navbar__brand-link:after,
+.bwell-navbar__brand-img {
+    height: 95px;
+    padding-top: 20px;
+}
+
+.bwell-navbar:before,
+.bwell-navbar__container {
+    height: 98px;
+}
+
+.bwell-navbar--ss .bwell-navbar__brand-link:after,
+.bwell-navbar--ss .bwell-navbar__brand-img {
+    height: 74px;
+}
+
+.bwell-navbar--ss:before,
+.bwell-navbar--ss .bwell-navbar__container {
+    height: 98px;
+}
+
+.bwell-navbar--xs .bwell-navbar__brand-link:after,
+.bwell-navbar--xs .bwell-navbar__brand-img {
+    height: 32px;
+}
+
+.bwell-navbar--xs:before,
+.bwell-navbar--xs .bwell-navbar__container {
+    height: 56px;
+}
+
+.bwell-navbar--s .bwell-navbar__brand-link:after,
+.bwell-navbar--s .bwell-navbar__brand-img {
+    height: 48px;
+}
+
+.bwell-navbar--s:before,
+.bwell-navbar--s .bwell-navbar__container {
+    height: 72px;
+}
+
+.bwell-navbar--m .bwell-navbar__brand-link:after,
+.bwell-navbar--m .bwell-navbar__brand-img {
+    height: 64px;
+}
+
+.bwell-navbar--m:before,
+.bwell-navbar--m .bwell-navbar__container {
+    height: 88px;
+}
+
+.bwell-navbar--l .bwell-navbar__brand-link:after,
+.bwell-navbar--l .bwell-navbar__brand-img {
+    height: 96px;
+}
+
+.bwell-navbar--l:before,
+.bwell-navbar--l .bwell-navbar__container {
+    height: 120px;
+}
+
+.bwell-navbar--xl .bwell-navbar__brand-link:after,
+.bwell-navbar--xl .bwell-navbar__brand-img {
+    height: 128px;
+}
+
+.bwell-navbar--xl:before,
+.bwell-navbar--xl .bwell-navbar__container {
+    height: 152px;
+}
+
+.bwell-navbar--short .bwell-navbar__brand-link:after,
+.bwell-navbar--short .bwell-navbar__brand-img {
+    height: 40px;
+}
+
+.bwell-navbar--short:before,
+.bwell-navbar--short .bwell-navbar__container {
+    height: 64px;
+}
+
+.bwell-navbar--short .bwell-navbar__container {
+    padding: 12px 0;
+}
+
+@media (max-width: 767px) {
+    .bwell-navbar--short .bwell-navbar__brand-link:after,
+    .bwell-navbar--short .bwell-navbar__brand-img {
+        height: 31px;
+    }
+    .bwell-navbar--short:before,
+    .bwell-navbar--short .bwell-navbar__container {
+        height: 45px;
+    }
+    .bwell-navbar--short .bwell-navbar__container {
+        padding: 7px 0;
+    }
+}
+
+.bwell-navbar__brand-img {
+    position: relative;
+}
+
+.bwell-navbar__brand-img,
+.bwell-navbar__container,
+.bwell-navbar__section {
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+
+.bwell-navbar__section {
+    background: #2c2c2c;
+    height: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.bwell-navbar__container {
+    display: table;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.bwell-navbar__menu-box {
+    display: table;
+    width: 100%;
+}
+
+.bwell-navbar__menu-box--inline-left,
+.bwell-navbar__menu-box--inline-center,
+.bwell-navbar__menu-box--inline-right {
+    display: block;
+    text-align: left;
+}
+
+.bwell-navbar__menu-box--inline-center {
+    text-align: center;
+}
+
+.bwell-navbar__menu-box--inline-right {
+    text-align: right;
+}
+
+.bwell-navbar__column {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bwell-navbar__column--xxs {
+    width: 1%;
+}
+
+.bwell-navbar__column--xs {
+    width: 10%;
+}
+
+.bwell-navbar__column--s {
+    width: 20%;
+}
+
+.bwell-navbar__column--m {
+    width: 30%;
+}
+
+.bwell-navbar__column--l {
+    width: 40%;
+}
+
+.bwell-navbar__column--xl {
+    width: 50%;
+}
+
+.bwell-navbar__menu-box--inline-left .bwell-navbar__column,
+.bwell-navbar__menu-box--inline-center .bwell-navbar__column,
+.bwell-navbar__menu-box--inline-right .bwell-navbar__column {
+    display: inline-block;
+}
+
+.bwell-navbar__items {
+    float: left;
+    padding-left: 0px;
+    position: relative;
+    left: -20px;
+}
+
+.bwell-navbar__items--right {
+    float: right;
+    left: 0;
+}
+
+.bwell-navbar__item {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.bwell-navbar__hamburger {
+    display: none;
+    margin-top: -11px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 10000;
+}
+
+.bwell-navbar--collapsed .bwell-navbar__container {
+    position: relative;
+}
+
+.bwell-navbar--collapsed .bwell-navbar__column {
+    display: block;
+    width: 100%;
+}
+
+.bwell-navbar--collapsed .bwell-navbar__items--right {
+    padding-top: 13px;
+}
+
+.bwell-navbar--collapsed .bwell-navbar__menu {
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.bwell-navbar--collapsed .bwell-navbar__menu-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bwell-navbar--collapsed .bwell-navbar__items {
+    float: none;
+}
+
+.bwell-navbar--collapsed .bwell-navbar__item {
+    float: none;
+}
+
+.bwell-navbar--collapsed .bwell-navbar__hamburger {
+    display: block;
+}
+
+.bwell-navbar--collapsed.bwell-navbar--open .bwell-navbar__menu {
+    display: table;
+}
+
+
+/* .bwell-navbar--collapsed.bwell-navbar--open:not(.bwell-navbar--sticky) .bwell-navbar__section {
+    background: blue;
+    position: fixed;
+}*/
+
+.bwell-navbar--collapsed.bwell-navbar--open .bwell-navbar__brand {
+    visibility: hidden;
+}
+
+.bwell-navbar--collapsed.bwell-navbar--sticky.bwell-navbar--open .bwell-navbar__brand {
+    visibility: visible;
+}
+
+.bwell-navbar--collapsed.bwell-navbar--open .bwell-navbar__brand-img,
+.bwell-navbar--collapsed.bwell-navbar--open .bwell-navbar__container {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.bwell-navbar--freeze.bwell-navbar--collapsed.bwell-navbar--open .bwell-navbar__hamburger,
+.bwell-navbar--freeze.bwell-navbar--collapsed.bwell-navbar--open .bwell-navbar__hamburger:hover {
+    color: #fff !important;
+}
+
+
+/*.bwell-navbar--sticky .bwell-navbar__section {
+    position: fixed;
+}*/
+
+.bwell-navbar--absolute {
+    position: absolute;
+}
+
+.bwell-navbar--transparent .bwell-navbar__section {
+    background: none;
+    position: fixed;
+}
+
+
+/*.bwell-navbar--stuck .bwell-navbar__section,
+.bwell-navbar--relative .bwell-navbar__section {
+    background: #2c2c2c;
+    height: 88px;
+}*/
+
+@media (max-width: 991px) {
+    .bwell-navbar--auto-collapse .bwell-navbar__container {
+        position: relative;
+    }
+    .bwell-navbar--auto-collapse .bwell-navbar__column {
+        display: block;
+        width: 100%;
+    }
+    .bwell-navbar--auto-collapse .bwell-navbar__items--right {
+        padding-top: 13px;
+    }
+    .bwell-navbar--auto-collapse .bwell-navbar__menu {
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+    .bwell-navbar--auto-collapse .bwell-navbar__menu-box {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .bwell-navbar--auto-collapse .bwell-navbar__items {
+        float: none;
+    }
+    .bwell-navbar--auto-collapse .bwell-navbar__item {
+        float: none;
+    }
+    .bwell-navbar--auto-collapse .bwell-navbar__hamburger {
+        display: block;
+    }
+    .bwell-navbar--auto-collapse.bwell-navbar--open .bwell-navbar__menu {
+        display: table;
+    }
+    /*.bwell-navbar--auto-collapse.bwell-navbar--open:not(.bwell-navbar--sticky) .bwell-navbar__section {
+        background: blue;
+        position: fixed;
+    }*/
+    .bwell-navbar--auto-collapse.bwell-navbar--open .bwell-navbar__brand {
+        visibility: hidden;
+    }
+    .bwell-navbar--auto-collapse.bwell-navbar--sticky.bwell-navbar--open .bwell-navbar__brand {
+        visibility: visible;
+    }
+    .bwell-navbar--auto-collapse.bwell-navbar--open .bwell-navbar__brand-img,
+    .bwell-navbar--auto-collapse.bwell-navbar--open .bwell-navbar__container {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+    .bwell-navbar--freeze.bwell-navbar--auto-collapse.bwell-navbar--open .bwell-navbar__hamburger,
+    .bwell-navbar--freeze.bwell-navbar--auto-collapse.bwell-navbar--open .bwell-navbar__hamburger:hover {
+        color: #fff !important;
+    }
+}
+
+.mbr-after-navbar:before {
+    content: "";
+    display: block;
+    height: 98px;
+}
+
+.mbr-hamburger {
+    cursor: pointer;
+    height: 23px;
+    width: 30px;
+}
+
+.mbr-hamburger:focus {
+    outline: none;
+}
+
+.mbr-hamburger__line,
+.mbr-hamburger__line:before,
+.mbr-hamburger__line:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    cursor: pointer;
+}
+
+.mbr-hamburger__line,
+.mbr-hamburger__line:before,
+.mbr-hamburger__line:after {
+    width: 30px;
+    border-bottom: 5px solid;
+    top: 9px;
+}
+
+.mbr-hamburger__line:before {
+    top: -9px;
+}
+
+.mbr-hamburger__line:after {
+    top: 9px;
+}
+
+.mbr-hamburger__line,
+.mbr-hamburger__line:before,
+.mbr-hamburger__line:after {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    color: deepskyblue;
+}
+
+.mbr-hamburger--open .mbr-hamburger__line {
+    border-color: transparent;
+}
+
+.mbr-hamburger--open .mbr-hamburger__line:before,
+.mbr-hamburger--open .mbr-hamburger__line:after {
+    top: 0;
+}
+
+.mbr-hamburger--open .mbr-hamburger__line:before {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.mbr-hamburger--open .mbr-hamburger__line:after {
+    top: 10px;
+    -ms-transform: translatey(-10px) rotate(-45deg);
+    -webkit-transform: translatey(-10px) rotate(-45deg);
+    transform: translatey(-10px) rotate(-45deg);
+}
+
+@media (max-width: 767px) {
+    .mbr-hamburger {
+        height: 23px;
+        width: 27px;
+    }
+    .mbr-hamburger__line,
+    .mbr-hamburger__line:before,
+    .mbr-hamburger__line:after {
+        width: 27px;
+        border-bottom: 4px solid;
+        top: 9px;
+    }
+    .mbr-hamburger__line:before {
+        top: -9px;
+    }
+    .mbr-hamburger__line:after {
+        top: 9px;
+    }
+}
