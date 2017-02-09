@@ -1,0 +1,28 @@
+<ul class="list">
+    <li>one</li>
+    <li class="special">two</li>
+    <li>three</li>
+    <li>sublist
+        <ul class="sublist">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </li>
+</ul>
+<script src="js/jquery.min.js"> </script>
+
+<script>
+    $(function() {  
+        
+        $('li').on('click', function() {
+            $(this).hide();
+        
+            if($(this).is('.special')) {
+                alert('special');
+            }
+        
+        });  
+    });
+
+</script>
