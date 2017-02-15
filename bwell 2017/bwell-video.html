@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/socicon.min.css">
-    <link rel="stylesheet" href="css/mobirise-slider-style.css">
+    <!--<link rel="stylesheet" href="css/mobirise-slider-style.css"> -->
     <link rel="stylesheet" href="css/mobirise-gallery-style.css">
     <link rel="stylesheet" href="css/mobirise-style.css">
     <link rel="stylesheet" href="css/mobirise-additional.css" type="text/css">
-    <link rel="stylesheet" href="css/thomas_custom.css">
+    <link rel="stylesheet" href="css/tm_custom.css">
     <style type="text/css">
         * {
             margin: 0;
@@ -50,18 +50,16 @@
 
 <body>
     <section class="bwell-navbar bwell-navbar--freeze bwell-navbar--absolute bwell-navbar--transparent bwell-navbar--sticky bwell-navbar--auto-collapse" id="menu-41">
+        <!--<section class="bwell-navbar bwell-navbar--absolute bwell-navbar--transparent bwell-navbar--auto-collapse" id="menu-41"> -->
         <div class="bwell-navbar__section mbr-section">
             <div class="mbr-section__container container">
                 <div class="bwell-navbar__container">
                     <div class="bwell-navbar__column bwell-navbar__column--s bwell-navbar__brand">
-                        <span class="bwell-navbar__brand-link mbr-brand mbr-brand--inline">
-                        <span class="mbr-brand__logo">
-                            <a href="#">
-                            <img src="images/logo_small.jpg" style="padding-top:15px;width:105px;" alt="Bwell_Logo">
-                            </a>
-                        </span> 
-                        </span>
-                        </span> 
+                        <!--<span class="bwell-navbar__brand-link mbr-brand mbr-brand--inline">  -->
+                        <!-- <span class="mbr-brand__logo bwell-navbar__brand-img"> -->
+                        <a href="#"> <img id="bwell_navbar_logo" src="images/logo_small.jpg" alt="Bwell_Logo"> </a>
+                        <!--</span>
+                        </span> -->
                     </div>
                     <div class="bwell-navbar__hamburger mbr-hamburger text-white"><span class="mbr-hamburger__line"></span></div>
                     <div class="bwell-navbar__column bwell-navbar__menu">
@@ -74,11 +72,12 @@
                                             <li><a class="mbr-buttons__link btn text-white" href="#aboutbwell">Therapists</a></li>
                                             <li><a class="mbr-buttons__link btn text-white" href="#contact">Location</a></li>
                                             <li><a class="mbr-buttons__link btn text-white" href="#testimonials">Testimonials</a></li>
+                                            <li><a class="mbr-buttons__link btn text-white" href="#faq">FAQ and Prices</a></li>         
                                         </ul>
                                     </li>
-                                    <li class="bwell-navbar__item dropdown"> <a class="dropdown-toggle mbr-buttons__link btn text-white" data-toggle="dropdown" href="#">bWell Therapy<span class="caret"></span></a>
+                                    <li class="bwell-navbar__item dropdown"> <a class="dropdown-toggle mbr-buttons__link btn text-white" data-toggle="dropdown">bWell Services<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="mbr-buttons__link btn text-white" href="#therapies">Anxiety</a></li>
+                                            <li><a class="mbr-buttons__link btn text-white" href="services.html">Anxiety</a></li>
                                             <li><a class="mbr-buttons__link btn text-white" href="#">Panic Attacks</a></li>
                                             <li><a class="mbr-buttons__link btn text-white" href="#">Depression</a></li>
                                             <li><a class="mbr-buttons__link btn text-white" href="#">Phobias</a></li>
@@ -92,26 +91,35 @@
                                             <li><a class="mbr-buttons__link btn text-white" href="#media">Print</a></li>
                                         </ul>
                                     </li>
-                                    <li class="bwell-navbar__item"><a class="mbr-buttons__link btn text-white" href="#clinic-gallery">Gallery</a>
-                                        <li class="bwell-navbar__item"><a class="mbr-buttons__link btn text-white" href="#contact">Contact</a> </ul>
-                            </div>
-                            <div class="bwell-navbar__column">
-                                <ul class="bwell-navbar__items bwell-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active">
-                                    <li class="bwell-navbar__item"><a class="mbr-buttons__btn btn btn-default" href="#">Home</a></li>
+                                    <li class="bwell-navbar__item"><a class="mbr-buttons__link btn text-white" href="#clinic-gallery">Gallery</a></li>
+                                    <li class="bwell-navbar__item"><a class="mbr-buttons__link btn text-white"  href="#contact">Contact</a> </li>
+                                    
+                                    
+                                    <li class="bwell-navbar__item"><a class="mbr-buttons__btn btn btn-default tm-button-white" id="home_button" href="#">Home</a></li>
+                                
                                 </ul>
+                                <!--<ul class="bwell-navbar__items bwell-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active">
+                                    
+                                </ul> -->
                             </div>
+                            <!--<div class="bwell-navbar__column">
+                                
+                            </div> -->
                         </nav>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-after-navbar" id="header1-40" data-bg-video="https://www.youtube.com/watch?v=x30YOmfeVTE&rel=0&autoplay=0&loop=0">
-        <!-- to play the sound of the youtube video - After the data-bg-video tag. Add this data-bg-video-params="{mute: false}" and it should work. Maybe some customers leave your site when sound starts without them wanting that.
-        -->
-        <!-- <section class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-after-navbar fullscreen-bg " id="header1-40"  data-bg-video=""> -->
+  <section class=" mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-after-navbar" id="header1-40" >
+             
+        <!--data-bg-video="https://www.youtube.com/watch?v=bLth7jFy3mI&feature=youtu.be"> -->
+    
         <video loop muted autoplay class="fullscreen-bg_video">
-            <source src="videos/zen_nature_video.mp4" type="video/mp4"> </video>
+            <source src="videos/zen_nature_video.mp4" type="video/mp4">
+        </video> 
+
+        <!-- to play the sound of the youtube video - After the data-bg-video tag. Add this data-bg-video-params="{mute: false}" and it should work. Maybe some customers leave your site when sound starts without them wanting that.       -->
         <!--
        https://www.youtube.com/watch?v=NR9bBqZCeqU //girl walking
        https://www.youtube.com/watch?v=BzRbvFhzksM //new york
@@ -131,17 +139,15 @@
                         <div class="row">
                             <div class=" col-sm-6">
                                 <div class="mbr-hero animated fadeInUp">
-                                    <h1 class="mbr-hero__text">bWell Clinic</h1>
-                                    <p class="mbr-hero__subtext"> bWell Director Allison Keating uses a winning combination of Positive Psychology Strategies that gives you the tools and know-how to improve and take control of your life. &nbsp; &nbsp;
+                                    <h1 class="mbr-hero__text" id="landing_title">bWell Clinic</h1>
+                                    <p class="mbr-hero__subtext" id="landing_text"> The bWell Clinic Team use a winning combination of Positive Psychology Strategies that gives you the tools and know-how to improve and take control of your life. &nbsp; &nbsp;
                                         <br> </p>
                                 </div>
-                                <div class="mbr-buttons btn-inverse mbr-buttons--left"> <a class="mbr-buttons__btn btn btn-lg animated fadeInUp delay btn-warning" href="#contact">CONTACT</a> <a class="mbr-buttons__btn btn btn-lg btn-default animated fadeInUp delay" href="#media">EXPLORE</a> </div>
+                                <div class="mbr-buttons btn-inverse mbr-buttons--left"> <a class="mbr-buttons__btn btn btn-md animated fadeInUp delay btn-warning" href="#contact">CONTACT</a> <a class="mbr-buttons__btn btn btn-md btn-default animated fadeInUp delay" href="#aboutbwell">LEARN MORE</a> </div>
                             </div>
                             <div>
                                 <div class=" col-sm-4">
-                                    <!-- <img src="images/Logo.jpg" style="padding-bottom:30px; padding-right:40px; float:right;" alt="Bwell_Logo"> -->
-                                    <!--<img src="images/outside_clinic.jpg" style="padding-bottom:100px; float:right;" alt="Bwell_Logo">  -->
-                                    <!--<img src="images/allison.jpg" width="300px" style="padding-bottom:100px; float:right;"  alt="Bwell_Logo"> --></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -151,12 +157,14 @@
                 <div class="mbr-section__container container"> <a class="mbr-arrow__link" href="#testimonials"><i class="glyphicon glyphicon-menu-down"></i></a> </div>
             </div>
         </div>
+    
+    
     </section>
     <div class="container">
         <section>
             <div class="page-header custom_padding" id="testimonials">
                 <h2> bWell Clinic Testimonials <small> </small></h2> </div>
-            <div class="row">
+            <div class="row" style="padding-bottom:100px;">
                 <div class="col-md-4">
                     <blockquote>
                         <p> "The best therapy I have ever encountered" </p>
@@ -180,51 +188,29 @@
         </section>
     </div>
     <!-- End container -->
-    <!--Gallery -->
-    <div class="container">
-        <section>
-            <div class="page-header custom_padding_gallery" id="gallery">
-                <!-- <h2> Gallery <small> Check out the awesome Gallery </small></h2> --></div>
-            <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#screenshot-carousel" data-slide-to="1"></li>
-                    <li data-target="#screenshot-carousel" data-slide-to="2"></li>
-                    <li data-target="#screenshot-carousel" data-slide-to="3"></li>
-                    <li data-target="#screenshot-carousel" data-slide-to="4"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item"> <img src="images/lg_forest_custom.jpg" alt="Text of the image here for SEO">
-                        <div class="carousel-caption">
-                            <!--<h3>Forest Heading</h3>
-                        <p>Get out more</p> --></div>
-                    </div>
-                    <div class="item active"> <img src="images/contemplation4.jpg" alt="Text of the image here for SEO">
-                        <div class="carousel-caption">
-                            <!-- <h3>Contemplation</h3>
-                        <p>Where are you in life?</p> --></div>
-                    </div>
-                    <div class="item"> <img src="images/yoga.jpg" alt="Text of the image here for SEO">
-                        <div class="carousel-caption">
-                            <!-- <h3>Yoga</h3>  
-                        <p>Get more balance</p> --></div>
-                    </div>
-                    <div class="item"> <img src="images/contemplation3.jpg" alt="Text of the image here for SEO">
-                        <div class="carousel-caption"> </div>
-                    </div>
-                    <div class="item"> <img src="images/walking2.jpg" alt="Text of the image here for SEO">
-                        <div class="carousel-caption">
-                            <!-- <h3>Freedom</h3>
-                        <p>Make that change!</p> --></div>
+    <section class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background " id="philosophy" style="background-image: url(images/lg_bamboo.jpg); ">
+        <div class="mbr-box__magnet mbr-box__magnet--sm-padding mbr-box__magnet--center-left ">
+            <div class="mbr-overlay " style="opacity: 0.5; background-color: rgb(41, 105, 176); "></div>
+            <div class="mbr-box__container mbr-section__container container ">
+                <div class="mbr-box mbr-box--stretched ">
+                    <div class="mbr-box__magnet mbr-box__magnet--center-left ">
+                        <div class="row" id="philosophy">
+                            <div class=" col-sm-6 ">
+                                <div class="mbr-hero animated fadeInUp">
+                                    <h1 class="mbr-hero__text ">The bWell Clinic Philosophy</h1>
+                                    <p class="mbr-hero__subtext ">On walking through the door, you will know that you are embarking on a positive journey to get you where you want to be, and give you back that feeling of being in control, improving the quality of your life and having a sense of life balance and wellbeing.
+                                        <br> </p>
+                                </div>
+                                <div class="mbr-buttons btn-inverse mbr-buttons--left "><a class="mbr-buttons__btn btn btn-lg animated fadeInUp delay btn-info " href="#aboutbwell">CONTACT</a> <a class="mbr-buttons__btn btn btn-lg btn-default animated fadeInUp delay " href="#media ">LEARN MORE</a></div>
+                            </div>
+                            <div class="col-sm-6 ">
+                                <div> <img alt=" " src="images/outside_clinic.jpg "> </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- end carousel-inner -->
-                <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-                <a href="#screenshot-carousel" class="right carousel-control" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
             </div>
-            <!-- end carousel -->
-        </section>
-    </div>
+    </section>
     <!-- About Us -->
     <div class="container">
         <section>
@@ -278,7 +264,7 @@
             <h2> Social </h2>
             <div class="row">
                 <div>
-                    <div class="thumbnail"> <a class="twitter-timeline" href="https://twitter.com/AllisonKeating1" data-widget-id="724343732183674880"> Tweets by @AllisonKeating1</a>
+                    <div class="thumbnail"> <a class="twitter-timeline" href="https://twitter.com/AllisonKeating1" style="padding:20px;" data-widget-id="724343732183674880"> Tweets by @AllisonKeating1</a>
                         <script>
                             ! function (d, s, id) {
                                 var js, fjs = d.getElementsByTagName(s)[0]
@@ -293,45 +279,22 @@
                         </script>
                     </div>
                 </div>
-                <!--<div>
+                <!-- <div>
                     <div class="thumbnail">
-                        <div class="col-sm-5 facebook-title">
+                        <!-- note I can also include the facebook sdk javascript instead of using iframes here -->
+                <!-- <div class="col-sm-5 facebook-title">
                             <h3>bWell on  </h3> </div>
                         <div class="col-sm-5 facebook-title-logo"> <img class="img-responsive" src="images/facebook_2015_logo.png"> </div>
                         <div class="col-sm-2"> </div>
                     </div>
-                    <div>
-                        <iframe src="https://www.facebook.com/plugins/page.php? href=https%3A%2F%2Fwww.facebook.com%2FbWellClinicAllisonKeating&tabs=timeline&width=650&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="650" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"> </iframe>
+                    <div style="padding:20px;">
+                        <iframe src="https://www.facebook.com/plugins/page.php? href=https%3A%2F%2Fwww.facebook.com%2FbWellClinicAllisonKeating&tabs=timeline&width=650&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="650" height="500" style="border:none;overflow:hidden" scrolling=" no " frameborder="0 " allowTransparency="true "> </iframe>
                     </div>
-                </div>-->
-            </div>
+                </div>  --></div>
         </div>
         </div>
     </section>
-    <section class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background " id="philosophy " style="background-image: url(images/lg_bamboo.jpg); ">
-        <div class="mbr-box__magnet mbr-box__magnet--sm-padding mbr-box__magnet--center-left ">
-            <div class="mbr-overlay " style="opacity: 0.5; background-color: rgb(41, 105, 176); "></div>
-            <div class="mbr-box__container mbr-section__container container ">
-                <div class="mbr-box mbr-box--stretched ">
-                    <div class="mbr-box__magnet mbr-box__magnet--center-left ">
-                        <div class="row " id="philosophy">
-                            <div class=" col-sm-6 ">
-                                <div class="mbr-hero animated fadeInUp ">
-                                    <h1 class="mbr-hero__text ">The bWell Clinic Philosophy</h1>
-                                    <p class="mbr-hero__subtext ">On walking through the door, you will know that you are embarking on a positive journey to get you where you want to be, and give you back that feeling of being in control, improving the quality of your life and having a sense of life balance and wellbeing.
-                                        <br> </p>
-                                </div>
-                                <div class="mbr-buttons btn-inverse mbr-buttons--left "><a class="mbr-buttons__btn btn btn-lg animated fadeInUp delay btn-info " href="#aboutbwell ">CONTACT</a> <a class="mbr-buttons__btn btn btn-lg btn-default animated fadeInUp delay " href="#media ">LEARN MORE</a></div>
-                            </div>
-                            <div class="col-sm-6 ">
-                                <div> <img alt=" " src="images/outside_clinic.jpg "> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="mbr-section mbr-section--relative mbr-parallax-background " id="msg-box5-46 " style="background-image: url(images/seascape2.jpg); ">
+    <section class="mbr-section mbr-section--relative mbr-parallax-background " id="msg-box5-46" style="background-image: url(images/seascape2.jpg); ">
         <div class="mbr-overlay " style="opacity: 0.5; background-color: rgb(0, 168, 133); "></div>
         <div class="mbr-section__container mbr-section__container--isolated container ">
             <div class="row ">
@@ -339,18 +302,28 @@
                     <div class="mbr-box__magnet mbr-box__magnet--top-right mbr-section__left col-sm-6 ">
                         <figure class="mbr-figure mbr-figure--adapted mbr-figure--caption-inside-bottom mbr-figure--full-width "><img class="mbr-figure__img " src="images/BwellClinic14-1.jpg "></figure>
                     </div>
-                    <div id="therapies " class="mbr-box__magnet mbr-class-mbr-box__magnet--center-left col-sm-6 mbr-section__right ">
+                    <div id="therapies" class="mbr-box__magnet mbr-class-mbr-box__magnet--center-left col-sm-6 mbr-section__right ">
                         <div class="mbr-section__container mbr-section__container--middle ">
-                            <div class="therapies-header">
-                                <h3>Example  Therapies</h3> </div>
+                            <div class="therapies-header ">
+                                <h3>bWell THERAPY</h3> </div>
                         </div>
                         <div class="mbr-section__container mbr-section__container--middle ">
-                            <div class="mbr-article mbr-article--auto-align mbr-article--wysiwyg ">
-                                <p class="therapies-font"> Generalised Anxiety Disorder can be defined as an unwarranted worry and over-analysing about everyday things. The excessive worry and overthinking can feel like it is consuming you. These thoughts or triggers can lead to psychosomatic symptoms such as shallow breathing, tight muscles, a nauseous stomach which can create a vicious cycle of thinking something is really wrong leading to more catastrophizing. It is called generalised anxiety as the individual can generalise the anxiety to everyday stresses and concerns over money, relationships, career. Normal daily routines and everything that feels outside of your control becomes a huge struggle and can sometimes feel overwhelming. This sense of being in a hyper-vigilant state can leave you feeling very frustrated with yourself and it can be normal to feel down, physically and emotionally exhausted and switching off can feel like a distant memory.</p>
+                            <!--<div class="mbr-article mbr-article--auto-align mbr-article--wysiwyg ">-->
+                            <div class="therapies-article">
+                            
+                                <p class="therapies-font ">
+                                    <ul>
+                                        <li> All individual sessions last 50 minutes </li>
+                                        <li> Clients receive a therapeutic bWell MP3 to take home after each session </li>
+                                        <li> bWell Therapy Sessions are one-to-one </li>
+                                        <li> Therapy includes General Anxiety Disorder, Anxiety, Panic Attacks, Specific Phobias, Agoraphobia, Social Phobia, Depression, Relationships, Separation, Divorce, affairs, self-esteem, Post-Traumatic Stress Disorder, Trauma, Insomnia, CBT for healthy eating, Eating Disorders and many more.</li>
+                                        <li> Phone &amp; Skype sessions are also available </li>
+                                    </ul> 
+                                </p>
                             </div>
                         </div>
                         <div class="mbr-section__container ">
-                            <div class="mbr-buttons mbr-buttons--auto-align btn-inverse "> <a class="mbr-buttons__btn btn btn-lg btn-warning" href="https://mobirise.com/bootstrap-template/ ">LEARN MORE</a> </div>
+                            <div class="mbr-buttons mbr-buttons--auto-align btn-inverse "> <a class="mbr-buttons__btn btn btn-lg btn-warning " href="services.html">LEARN MORE</a> </div>
                         </div>
                     </div>
                 </div>
@@ -358,16 +331,16 @@
         </div>
     </section>
     <!-- MEDIA SECTION -->
-    <div class="container">
+    <div class="container ">
         <section>
-            <div class="page-header custom_padding" id="media">
+            <div class="page-header custom_padding " id="media">
                 <h2> bWell Media Coverage </h2>
-                <div class="row">
-                    <div class="col-sm-4">
+                <div class="row ">
+                    <div class="col-sm-4 ">
                         <h3> TV </h3>
                         <div class="thumbnail ">
-                            <!--<iframe sandbox="allow-same-origin allow-scripts allow-popups " id="foo " width="350 " height="300 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " src="https://youtu.be/viwAlRh61rs"> </iframe> -->
-                            <iframe width="350" height="300" src="https://www.youtube.com//embed/viwAlRh61rs"> </iframe>
+                            <!--<iframe sandbox="allow-same-origin allow-scripts allow-popups " id="foo " width="350 " height="300 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " src="https://youtu.be/viwAlRh61rs "> </iframe> -->
+                            <iframe width="350 " height="300 " src="https://www.youtube.com//embed/viwAlRh61rs "> </iframe>
                             <div class="caption ">
                                 <div>
                                     <h3>RTÉs Today Show</h3>
@@ -376,9 +349,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 ">
                         <h3> Radio </h3>
-                        <table class="table table-striped">
+                        <table class="table table-striped ">
                             <thead>
                                 <tr>
                                     <th>Radio Station</th>
@@ -413,9 +386,9 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 ">
                         <h3> Print </h3>
-                        <table class="table table-striped">
+                        <table class="table table-striped ">
                             <thead>
                                 <tr>
                                     <th>Publication</th>
@@ -465,19 +438,19 @@
             <div>
                 <div class="row mbr-gallery-row no-gutter ">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mbr-gallery-item ">
-                        <a href="#lb-gallery1-49 " data-slide-to="0" data-toggle="modal ">
-                            <div class="thumbnail "> <img alt=" " src="images/outside_clinic1.jpg"> </div> <span class="icon glyphicon glyphicon-zoom-in "></span> </a>
+                        <a href="#lb-gallery1-49 " data-slide-to="0 " data-toggle="modal ">
+                            <div class="thumbnail "> <img alt=" " src="images/outside_clinic1.jpg "> </div> <span class="icon glyphicon glyphicon-zoom-in "></span> </a>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mbr-gallery-item ">
-                        <a href="#lb-gallery1-49 " data-slide-to="1" data-toggle="modal ">
+                        <a href="#lb-gallery1-49 " data-slide-to="1 " data-toggle="modal ">
                             <div class="thumbnail "> <img alt=" " src="images/BwellClinic14-1.jpg "> </div> <span class="icon glyphicon glyphicon-zoom-in "></span> </a>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mbr-gallery-item ">
-                        <a href="#lb-gallery1-49 " data-slide-to="2" data-toggle="modal ">
+                        <a href="#lb-gallery1-49 " data-slide-to="2 " data-toggle="modal ">
                             <div class="thumbnail "> <img alt=" " src="images/BwellClinic14-3.jpg " width="100px "> </div> <span class="icon glyphicon glyphicon-zoom-in "></span> </a>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mbr-gallery-item ">
-                        <a href="#lb-gallery1-49 " data-slide-to="3" data-toggle="modal ">
+                        <a href="#lb-gallery1-49 " data-slide-to="3 " data-toggle="modal ">
                             <div class="thumbnail "> <img alt=" " src="images/main%20room.jpg "> </div> <span class="icon glyphicon glyphicon-zoom-in "></span> </a>
                     </div>
                 </div>
@@ -485,27 +458,21 @@
             <div class="clearfix "></div>
         </div>
     </section>
-    <!-- Thomas - make this arrow a different colour and point it to #home -->
-    <div class="mbr-arrow mbr-arrow--floating text-center ">
-        <div class="mbr-section__container container ">
-            <a class="mbr-arrow__link " href="# "> <i class="glyphicon glyphicon-menu-up "></i></a>
-        </div>
-    </div>
     <!-- FAQ -->
-    <div class="container ">
+    <div class="container">
         <section>
-            <div class="page-header " id="faq ">
-                <h2>FAQ. <small>Engaging with consumers </small></h2> </div>
+            <div class="page-header" id="faq">
+                <h2>FAQ <small>Frequently asked questions </small></h2> </div>
             <!-- End Page Header -->
-            <div class="panel-group " id="accordion ">
+            <div class="panel-group" id="accordion">
                 <div class="panel panel-default ">
                     <div class="panel-heading ">
-                        <div class="panel-title "> <a href="#collapse-1 " data-toggle="collapse " data-parent="#accordion "> 
-                                Question One?                                   
+                        <div class="panel-title "> <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion "> 
+                                How much does a session cost ?                                   
                             </a> </div>
                         <!-- End panel title -->
-                        <div id="collapse-1 " class="panel-collapse collapse ">
-                            <div class="panel-body "> Answer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat lobortis quam, at pharetra mi faucibus sed. Phasellus efficitur convallis rhoncus. Suspendisse potenti. </div>
+                        <div id="collapse-1" class="panel-collapse collapse ">
+                            <div class="panel-body"> Answer: bWell sessions cost €125 </div>
                         </div>
                         <!-- End Panel Collapse -->
                     </div>
@@ -514,26 +481,41 @@
                 <!-- End panel default -->
                 <div class="panel panel-default ">
                     <div class="panel-heading ">
-                        <div class="panel-title "> <a href="#collapse-2 " data-toggle="collapse " data-parent="#accordion "> 
-                                Question Two?                                   
+                        <div class="panel-title "> <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion "> 
+                                How long does a session last ?                                   
                             </a> </div>
                         <!-- End panel title -->
-                        <div id="collapse-2 " class="panel-collapse collapse ">
-                            <div class="panel-body "> Answer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat lobortis quam, at pharetra mi faucibus sed. Phasellus efficitur convallis rhoncus. Suspendisse potenti. </div>
+                        <div id="collapse-2" class="panel-collapse collapse ">
+                            <div class="panel-body"> Answer: All individual sessions are 50 minutes. Couples therapy lasts 90 minutes</div>
                         </div>
                         <!-- End Panel Collapse -->
                     </div>
                     <!-- End panel heading -->
                 </div>
                 <!-- End panel default -->
-                <div class="panel panel-default ">
-                    <div class="panel-heading ">
-                        <div class="panel-title "> <a href="#collapse-3 " data-toggle="collapse " data-parent="#accordion "> 
-                                Question Three?                                   
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title"> <a href="#collapse-3" data-toggle="collapse" data-parent="#accordion"> 
+                                How many sessions will I need ?                                   
                             </a> </div>
                         <!-- End panel title -->
-                        <div id="collapse-3 " class="panel-collapse collapse ">
-                            <div class="panel-body "> Answer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat lobortis quam, at pharetra mi faucibus sed. Phasellus efficitur convallis rhoncus. Suspendisse potenti. </div>
+                        <div id="collapse-3" class="panel-collapse collapse">
+                            <div class="panel-body"> Answer: This will vary depending on the individual and will be decided after the initial consultation with your therapist </div>
+                        </div>
+                        <!-- End Panel Collapse -->
+                    </div>
+                    <!-- End panel heading -->
+                </div>
+                <!-- End panel default -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title"> <a href="#collapse-4" data-toggle="collapse" data-parent="#accordion"> 
+                                Will my therapy be confidential?                                   
+                            </a> </div>
+                        <!-- End panel title -->
+                        <div id="collapse-4" class="panel-collapse collapse">
+                            <div class="panel-body"> Answer: All consultations and communication are completely confidential </div>
                         </div>
                         <!-- End Panel Collapse -->
                     </div>
@@ -548,10 +530,27 @@
     <!-- Contact Us  -->
     <div class="container ">
         <section>
-            <div class="page-header " id="contact">
+            <div class="page-header" id="contact">
                 <h2>Contact Us</h2> </div>
             <!-- End Page Header -->
             <div class="row ">
+                
+                <P class="clinic-location-text"> 
+                
+                    <strong> Location  </strong>
+                    <br>
+                    The bWell Clinic is located at No 12 St James Terrace, Malahide in a beautifully restored listed Georgian building in the heart of Malahide Village. 
+                    The clinic is parallel to Malahide Tennis Club. We are literally a few steps from Malahide Estuary which gives an immediate feeling of calm and relaxation that is reflected in the spacious and beautiful therapy room. 
+                    It is part of the bWell Clinic’s ethos to provide therapy in a deeply therapeutic space. Where you feel safe, nurtured and minded.
+                    <br>
+                    <br>
+                    <strong> Directions  </strong>
+                    <br>
+                    On arriving into Malahide Village, drive through the lights at the cross roads and head in the direction of the Grand Hotel. You will pass a road called Townyard Lane on your left. James Terrace is the next left and looks onto the tennis club. The Garda station is the first building on James Terrace, we are the last house looking towards the water. There is pay and display parking on the terrace.
+                    Malahide is served by the 42, 32a, 102 and 230 bus routes and is also on the Dart and Intercity Train Service. It is a five minute walk from Malahide train station. 
+                    
+                </P>
+                
                 <div class="col-sm-4 ">
                     <p> Send us a message or contact us on here: </p> <address>
                           <strong>bWell Clinic </strong> </br>
@@ -577,12 +576,6 @@
                         </div>
                         <!-- End form group -->
                         <div class="form-group ">
-                            <label for="user-website " class="col-lg-2 control-label "> Your website </label>
-                            <div class="col-lg-10 ">
-                                <input type="text " class="form-control " id="user-website " placeholder="If you have a website "> </div>
-                        </div>
-                        <!-- End form group -->
-                        <div class="form-group ">
                             <label for="user-message " class="col-lg-2 control-label "> Message </label>
                             <div class="col-lg-10 ">
                                 <textarea name="user-message " id="user-message " class="form-control " cols="20 " rows="10 " placeholder="Enter your message here "></textarea>
@@ -597,12 +590,13 @@
                         <!-- End form group -->
                     </form>
                 </div>
-                <div class="col-sm-3 " id="location">
+                <div class="col-sm-3 " id="location ">
                     <figure class="mbr-figure mbr-figure--wysiwyg mbr-figure--full-width mbr-figure--no-bg ">
                         <div class="mbr-figure__map mbr-figure__map--short mbr-google-map ">
-                            <p class="mbr-google-map__marker" data-coordinates="53.451583,-6.1515 "></p>
+                            <p class="mbr-google-map__marker " data-coordinates="53.451583,-6.1515 "></p>
                         </div>
                     </figure>
+                    
                 </div>
             </div>
             <!-- End the row -->
@@ -612,21 +606,21 @@
     <!-- call to action -->
     <div class="container ">
         <section>
-            <h2> Subscribe to the bWell newsletter: </h2> </section>
+            <h3> Subscribe to the bWell newsletter: </h3> </section>
     </div>
     <footer>
         <div class="well " style="background-color: rgb(68, 68, 68); ">
             <div class="container text-center subscribe-newsletter-section ">
                 <form action=" " class="form-inline ">
-                    <div class="form-group col-sm-4">
+                    <div class="form-group col-sm-4 ">
                         <label for="subscription ">
                             <h3> Name: </h3></label>
-                        <input type="text " class="form-control" id="subscription " placeholder="Your Name "> </div>
-                    <div class="form-group  col-sm-4">
+                        <input type="text " class="form-control " id="subscription " placeholder="Your Name "> </div>
+                    <div class="form-group col-sm-4 ">
                         <label for="email ">
                             <h3> Email: </h3></label>
-                        <input type="text " class="form-control" id="email " placeholder="Your Email"> </div>
-                    <div class="col-sm-4">
+                        <input type="text " class="form-control " id="email " placeholder="Your Email "> </div>
+                    <div class="col-sm-4 ">
                         <button type="submit " class="mbr-buttons__btn btn btn-lg animated fadeInUp delay btn-warning " href="#contact "> Subscribe </button>
                     </div>
                     <hr> </form>
@@ -639,21 +633,23 @@
         <div class="mbr-section__container container ">
             <div class="mbr-header mbr-header--inline row ">
                 <div class="col-sm-4 ">
-                    <h3 class="mbr-header__text ">FOLLOW US ON: </h3> </div>
+                    <h3 class="mbr-header__text ">Follow us on: </h3> </div>
                 <div class="mbr-social-icons mbr-social-icons--style-1 col-sm-8 "> <a class="mbr-social-icons__icon socicon-bg-twitter " title="Twitter " target="_blank " href="https://twitter.com/allisonkeating1 "><i class="socicon socicon-twitter "></i></a> <a class="mbr-social-icons__icon socicon-bg-facebook " title="Facebook " target="_blank " href="https://www.facebook.com/bWellClinicAllisonKeating "><i class="socicon socicon-facebook "></i></a> <a class="mbr-social-icons__icon socicon-bg-youtube " title="YouTube " target="_blank " href="http://www.youtube.com/ "><i class="socicon socicon-youtube "></i></a> <a class="mbr-social-icons__icon socicon-bg-linkedin " title="LinkedIn " target="_blank " href="https://www.linkedin.com/in/allison-keating-174b04a "><i class="socicon socicon-linkedin "></i></a> </div>
             </div>
         </div>
+        
     </section>
-    <footer class="mbr-section mbr-section--relative mbr-section--fixed-size " id="footer1-58 " style="background-color: rgb(68, 68, 68); ">
+    <footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-58 " style="background-color: rgb(68, 68, 68);">
         <div class="mbr-section__container container ">
-            <div class="mbr-footer text-center ">
+            <div class="mbr-footer text-center">
                 <!-- <div class="mbr-footer mbr-footer--wysiwyg row text-center "> -->
                 <div class="col-sm-12 ">
                     <p class="mbr-footer__copyright "></p>
-                    <p>Copyright &copy 2016 bWell Clinic. </p>
+                    <p>Copyright &copy 2017 bWell Clinic. </p>
                 </div>
             </div>
         </div>
+
     </footer>
     <script src="js/jquery.min.js "></script>
     <script src="js/bootstrap.min.js "></script>

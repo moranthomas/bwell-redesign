@@ -31,8 +31,19 @@
     }
     
     #menu-41.bwell-navbar--stuck a#home_button {
-        /* ensure the home button stays visible WHEN YOU SCROLLDOWN on mobile */
-        color: white;
+        /* ensure the home button stays visible WHEN YOU SCROLLDOWN on FULL VERSION */
+        /*color: grey!important;*/
+        color: black;
+        border-color: black;
+    }
+
+    @media (max-width: 991px) {
+        /* ensure the home button stays visible WHEN YOU SCROLLDOWN on MOBILE */
+         #menu-41.bwell-navbar--stuck a#home_button {
+            /* ensure the home button stays visible WHEN YOU SCROLLDOWN on FULL VERSION */
+            color: grey!important;
+            border: 1px solid grey!important;
+        }
     }
     
     #menu-41.bwell-navbar--stuck .bwell-navbar__section .bwell-navbar__column {
