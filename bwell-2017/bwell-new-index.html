@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/socicon.min.css">
-    <!--<link rel="stylesheet" href="css/mobirise-slider-style.css"> -->
     <link rel="stylesheet" href="css/mobirise-gallery-style.css">
     <link rel="stylesheet" href="css/mobirise-style.css">
     <link rel="stylesheet" href="css/mobirise-additional.css" type="text/css">
@@ -50,16 +49,11 @@
 
 <body>
     <section class="bwell-navbar bwell-navbar--freeze bwell-navbar--absolute bwell-navbar--transparent bwell-navbar--sticky bwell-navbar--auto-collapse" id="menu-41">
-        <!--<section class="bwell-navbar bwell-navbar--absolute bwell-navbar--transparent bwell-navbar--auto-collapse" id="menu-41"> -->
         <div class="bwell-navbar__section mbr-section">
             <div class="mbr-section__container container">
                 <div class="bwell-navbar__container">
                     <div class="bwell-navbar__column bwell-navbar__column--s bwell-navbar__brand">
-                        <!--<span class="bwell-navbar__brand-link mbr-brand mbr-brand--inline">  -->
-                        <!-- <span class="mbr-brand__logo bwell-navbar__brand-img"> -->
                         <a href="#"> <img id="bwell_navbar_logo" src="images/logo_small.jpg" alt="Bwell_Logo"> </a>
-                        <!--</span>
-                        </span> -->
                     </div>
                     <div class="bwell-navbar__hamburger mbr-hamburger text-white"><span class="mbr-hamburger__line"></span></div>
                     <div class="bwell-navbar__column bwell-navbar__menu">
@@ -68,19 +62,20 @@
                                 <ul class="bwell-navbar__items bwell-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
                                     <li class="bwell-navbar__item dropdown"> <a class="dropdown-toggle mbr-buttons__link btn text-white" data-toggle="dropdown" href="#">About bWell<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="mbr-buttons__link btn text-white" href="#philosophy">Our Philosophy</a></li>
-                                            <li><a class="mbr-buttons__link btn text-white" href="#aboutbwell">Therapists</a></li>
-                                            <li><a class="mbr-buttons__link btn text-white" href="#contact">Location</a></li>
-                                            <li><a class="mbr-buttons__link btn text-white" href="#testimonials">Testimonials</a></li>
-                                            <li><a class="mbr-buttons__link btn text-white" href="#faq">FAQ and Prices</a></li>         
+                                            <!-- DOES NOT WORK YET :( -->
+                                            <li class="tm-nav" data-page="#philosophy"><a class="mbr-buttons__link btn text-white" href="#">Our Philosophy</a></li>
+                                            <li class="tm-nav" data-page="bwell-new-therapists"><a class="mbr-buttons__link btn text-white" href="#">Therapists</a></li>
+                                            <li class="tm-nav" data-page="bwell-new-location"><a class="mbr-buttons__link btn text-white" href="#">Location</a></li>
+                                            <li class="tm-nav" data-page="bwell-new-testimonials"><a class="mbr-buttons__link btn text-white" href="#">Testimonials</a></li>
+                                            <li class="tm-nav" data-page="bwell-new-faq"><a class="mbr-buttons__link btn text-white" href="#">FAQ and Prices</a></li>         
                                         </ul>
                                     </li>
                                     <li class="bwell-navbar__item dropdown"> <a class="dropdown-toggle mbr-buttons__link btn text-white" data-toggle="dropdown" href="#">bWell Services<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="mbr-buttons__link btn text-white" href="#">Anxiety</a></li>
-                                            <li><a class="mbr-buttons__link btn text-white" href="#">Panic Attacks</a></li>
-                                            <li><a class="mbr-buttons__link btn text-white" href="#">Depression</a></li>
-                                            <li><a class="mbr-buttons__link btn text-white" href="#">Phobias</a></li>
+                                            <li class="tm-nav" data-page="bwell-new-anxiety"><a class="mbr-buttons__link btn text-white" href="#">Anxiety</a></li>
+                                            <li class="tm-nav" data-page="bwell-new-panic"><a class="mbr-buttons__link btn text-white" href="#">Panic Attacks</a></li>
+                                            <li class="tm-nav" data-page="bwell-new-depression"><a class="mbr-buttons__link btn text-white" href="#">Depression</a></li>
+                                            <li class="tm-nav" data-page="bwell-new-phobias"><a class="mbr-buttons__link btn text-white" href="#">Phobias</a></li>
                                         </ul>
                                     </li>
                                     <li class="bwell-navbar__item dropdown"> <a class="dropdown-toggle mbr-buttons__link btn text-white" data-toggle="dropdown" href="#">Media<span class="caret"></span></a>
@@ -94,19 +89,13 @@
                                     <li class="bwell-navbar__item"><a class="mbr-buttons__link btn text-white" href="#clinic-gallery">Gallery</a></li>
                                     <li class="bwell-navbar__item"><a class="mbr-buttons__link btn text-white"  href="#contact">Contact</a> </li>
                                     
-                                    <li class="bwell-navbar__item" data-page="bwell-video-new-services"><a class="mbr-buttons__link btn text-white" href="#">Services</a></li>
-                                    
                                 
-                                    <li class="bwell-navbar__item" data-page="bwell-video-new-home"><a class="mbr-buttons__btn btn btn-default tm-button-white" id="home_button" href="#">Home</a></li>
+                                    <li class="bwell-navbar__item tm-nav" data-page="bwell-new-home"><a class="mbr-buttons__btn btn btn-default tm-button-white" id="home_button" href="#">Home</a></li>
                                 
                                 </ul>
-                                <!--<ul class="bwell-navbar__items bwell-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active">
-                                    
-                                </ul> -->
-                            </div>
-                            <!--<div class="bwell-navbar__column">
                                 
-                            </div> -->
+                            </div>
+                            
                         </nav>
                     </div>
                 </div>
@@ -122,7 +111,6 @@
     <footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-58 " style="background-color: rgb(68, 68, 68);">
         <div class="mbr-section__container container ">
             <div class="mbr-footer text-center">
-                <!-- <div class="mbr-footer mbr-footer--wysiwyg row text-center "> -->
                 <div class="col-sm-12 ">
                     <p class="mbr-footer__copyright "></p>
                     <p>Copyright &copy 2017 bWell Clinic. </p>
@@ -148,15 +136,21 @@
 <script>
     $(document).ready(function () {
 
-        $(".content-section").load("bwell-video-new-home.html");
-        //$("ul.navbar-nav li").each(function () {
+        $(".content-section").load("bwell-new-home.html");
         
-        $(".bwell-navbar__item").each(function () {
+        $(".tm-nav").each(function () {
                 $(this).on('click', function () {
-                var elem = $(this);
-                //console.log(elem[0].innerHTML);
-                //console.log($("#contactlink"));
-                $(".content-section").load(elem.attr('data-page')+".html");
+                    
+                    var elem = $(this);
+                       
+                    if(elem.attr('data-page').includes('#')) {
+                       $(".content-section").load("bwell-new-home.html" + elem.attr('data-page'));
+                    }
+                    else {
+                        //console.log(elem[0].innerHTML);
+                        //console.log($("#contactlink"));
+                        $(".content-section").load(elem.attr('data-page')+".html");
+                    }
             });
         });
     });
