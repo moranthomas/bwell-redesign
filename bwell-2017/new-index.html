@@ -27,7 +27,7 @@
             font-family: Calibri, sans-serif;
         }
         
-        .background-wrap {
+        /*.background-wrap {
             position: fixed;
             z-index: -1000;
             width: 100%;
@@ -43,7 +43,7 @@
             left: 0;
             min-height: 100%;
             min-width: 100%;
-        }
+        }*/
     </style>
 </head>
 
@@ -62,8 +62,7 @@
                                 <ul class="bwell-navbar__items bwell-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
                                     <li class="bwell-navbar__item dropdown"> <a class="dropdown-toggle mbr-buttons__link btn text-white" data-toggle="dropdown" href="#">About bWell<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <!-- DOES NOT WORK YET :( -->
-                                            <li class="tm-nav" data-page="#philosophy"><a class="mbr-buttons__link btn text-white" href="#">Our Philosophy</a></li>
+                                            <li class="tm-nav" data-page="#contact"><a class="mbr-buttons__link btn text-white" href="#">Our Philosophy</a></li>
                                             <li class="tm-nav" data-page="bwell-new-therapists"><a class="mbr-buttons__link btn text-white" href="#">Therapists</a></li>
                                             <li class="tm-nav" data-page="bwell-new-location"><a class="mbr-buttons__link btn text-white" href="#">Location</a></li>
                                             <li class="tm-nav" data-page="bwell-new-testimonials"><a class="mbr-buttons__link btn text-white" href="#">Testimonials</a></li>
@@ -80,7 +79,7 @@
                                     </li>
                                     <li class="bwell-navbar__item dropdown"> <a class="dropdown-toggle mbr-buttons__link btn text-white" data-toggle="dropdown" href="#">Media<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="mbr-buttons__link btn text-white" href="#social">Social</a></li>
+                                            <li class="tm-nav" data-page="#social"><a class="mbr-buttons__link btn text-white" href="#">Social</a></li>
                                             <li><a class="mbr-buttons__link btn text-white" href="#media">TV</a></li>
                                             <li><a class="mbr-buttons__link btn text-white" href="#media">Radio</a></li>
                                             <li><a class="mbr-buttons__link btn text-white" href="#media">Print</a></li>
@@ -90,7 +89,7 @@
                                     <li class="bwell-navbar__item"><a class="mbr-buttons__link btn text-white"  href="#contact">Contact</a> </li>
                                     
                                 
-                                    <li class="bwell-navbar__item tm-nav" data-page="bwell-new-home"><a class="mbr-buttons__btn btn btn-default tm-button-white" id="home_button" href="#">Home</a></li>
+                                    <li class="bwell-navbar__item tm-nav" data-page="bwell-new-about-bwell"><a class="mbr-buttons__btn btn btn-default tm-button-white" id="home_button" href="#">Home</a></li>
                                 
                                 </ul>
                                 
@@ -104,8 +103,7 @@
     </section>
     
     <div class="content-section">
-      
-  
+        <!-- THIS IS THE EMPTY DIV FOR THE CONTENT THAT GETS POPULATED DYNAMICALLY --> 
     </div>
     
     <footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-58 " style="background-color: rgb(68, 68, 68);">
@@ -136,7 +134,7 @@
 <script>
     $(document).ready(function () {
 
-        $(".content-section").load("bwell-new-home.html");
+        $(".content-section").load("bwell-new-about-bwell.html");
         
         $(".tm-nav").each(function () {
                 $(this).on('click', function () {
@@ -144,7 +142,12 @@
                     var elem = $(this);
                        
                     if(elem.attr('data-page').includes('#')) {
-                       $(".content-section").load("bwell-new-home.html" + elem.attr('data-page'));
+                       $(".content-section").load("bwell-new-about-bwell.html" + elem.attr('data-page'));
+                        
+                       $('html, body').animate({
+                            scrollTop: $(elem.attr('data-page')).offset().top
+                        }, 'slow');
+                       
                     }
                     else {
                         //console.log(elem[0].innerHTML);
