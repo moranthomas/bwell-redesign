@@ -1,9 +1,42 @@
+<script src="js/jquery.min.js"> </script>
+<script>
+    var isMobile = false; //initiate as false
+    if (/Mobi/.test(navigator.userAgent)) {
+        isMobile = true;
+    }
+
+    $('#either-gif-or-video').each(function () {
+        if(isMobile) {  
+            $('#fullscreen-image').each(function () {
+                this.src='images/zen-video-still.png';
+            });
+        }
+        else { 
+            $('video').each(function () {
+                this.src='videos/zen_nature_video.mp4';
+            });                   
+        } 
+        /* To ensure that the video fits nicely in the device’s screen, we then add the following media query to the page’s CSS:
+        video {  
+           width:100%; 
+           max-width:500px; 
+           height:auto; 
+        } */
+    }); 
+</script>
+
 <section class=" mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-after-navbar" id="header1-40">
     <!--data-bg-video="https://www.youtube.com/watch?v=bLth7jFy3mI&feature=youtu.be"> -->
-    <video loop muted autoplay class="fullscreen-bg_video" preload="none" poster="images/zen-video-still.png">
+    
+    <div id="either-gif-or-video">
+        <video loop muted autoplay class="fullscreen-bg_video" preload="none">
+            <source src="" type="video/mp4"> 
+        </video>
+        <img id="fullscreen-image" src="" class="fullscreen-bg_video">
+    </div>
+    <!--<video loop muted autoplay class="fullscreen-bg_video" preload="none" poster="images/zen-video-still.png">
         <source src="videos/zen_nature_video.mp4" type="video/mp4"> 
-        <source src="images/bamboo.jpg" media="all and (max-width:480px)">
-    </video>
+    </video>-->
     <!-- to play the sound of the youtube video - After the data-bg-video tag. Add this data-bg-video-params="{mute: false}" and it should work. Maybe some customers leave your site when sound starts without them wanting that.       -->
     <!--
        https://www.youtube.com/watch?v=NR9bBqZCeqU //girl walking

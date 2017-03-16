@@ -136,6 +136,11 @@
                     }
                 });
             });
+            
+            $(this).on('beforeunload', function() {
+                $("video").hide();
+            });
+            
         });
     </script>
 </body>
