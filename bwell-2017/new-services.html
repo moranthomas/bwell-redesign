@@ -1,38 +1,30 @@
-<script src="js/jquery.min.js"> </script>
+<script src="js/jquery.min.js">
+</script>
 <script>
     var isMobile = false; //initiate as false
     if (/Mobi/.test(navigator.userAgent)) {
         isMobile = true;
     }
-
     $('#either-gif-or-video').each(function () {
-        if(isMobile) {  
+        if (isMobile) {
             $('#fullscreen-image').each(function () {
-                this.src='images/zen-video-still.png';
+                this.src = 'images/zen-video-still.png';
             });
         }
-        else { 
+        else {
             $('video').each(function () {
-                this.src='videos/zen_nature_video.mp4';
-            });                   
+                this.src = 'videos/zen_nature_video.mp4';
+            });
         }
-
-    }); 
+    });
 </script>
-
 <section class=" mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-after-navbar" id="header1-40">
-    
     <div id="either-gif-or-video">
         <video loop muted autoplay class="fullscreen-bg_video" preload="none">
-            <source src="" type="video/mp4"> 
-        </video>
-        <img id="fullscreen-image" src="" class="fullscreen-bg_video">
-    </div>
-    
+            <source src="" type="video/mp4"> </video> <img id="fullscreen-image" src="" class="fullscreen-bg_video"> </div>
     <!--data-bg-video="https://www.youtube.com/watch?v=bLth7jFy3mI&feature=youtu.be"> -->
     <!--<video loop muted autoplay class="fullscreen-bg_video" poster="images/zen-video-still.png">
         <source src="videos/zen_nature_video.mp4" type="video/mp4"> </video> -->
-    
     <div class="mbr-box__magnet mbr-box__magnet--sm-padding mbr-box__magnet--center-left">
         <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(76, 105, 114);"> </div>
         <div class="mbr-box__container mbr-section__container container">
@@ -164,13 +156,44 @@
                     </div>
                     <p class="text-center"><a href="#depression" class="btn btn-info" role="button">More Info</a> <a href="#depression" class="btn btn-default" role="button">Learn More</a></p>
                 </div>
-            </div>            
+            </div>
         </div>
-</div>
-<!-- END THUMBNAIL CONTENT PANEL -->
-<!--</div>
+        <!-- Default panel contents -->
+        <div class="panel-heading"><strong><br/></strong></div>
+        <!-- START THIRD ROW -->
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail text-center"> <img src="images/phobias.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Phobias</h3>
+                        <p>Symptoms and Treatment</p>
+                    </div>
+                    <p class="text-center"><a href="#phobias" class="btn btn-info" role="button">More Info</a> <a href="#phobias" class="btn btn-default" role="button">Learn More</a></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail text-center"> <img src="images/self-esteem.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Self-Esteem</h3>
+                        <p>Symptoms and Treatment</p>
+                    </div>
+                    <p class="text-center"><a href="#self-esteem" class="btn btn-info" role="button">More Info</a> <a href="#self-esteem" class="btn btn-default" role="button">Learn More</a></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail text-center"> <img src="images/corporate.jpg" alt="...">
+                    <div class="caption">
+                        <h3>bWell Corporate</h3>
+                        <p>Overview of Services</p>
+                    </div>
+                    <p class="text-center"><a href="#corporate" class="btn btn-info" role="button">More Info</a> <a href="#corporate" class="btn btn-default" role="button">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- END THUMBNAIL CONTENT PANEL -->
+        <!--</div>
  END PANEL DEFAULT -->
-</section>
+    </section>
 </div>
 <!-- END Table of Contents CONTAINER -->
 <br/>
@@ -378,10 +401,9 @@
                 <p>We have many different relationships in our lives. Relationships are between your family, your parents, your children, intimate relationships, marriage, friendship and work. Loneliness in and out of relationships is a very common and difficult experience.
                     <br/>
                     <br/>
-                <h2 id="bWellServices-bWellCouplesTherapy">bWell Couples Therapy </h2>
-                 <p>We hope to offer a calm, reflective perspective and space to help you feel centred in your most important relationships.</p>
- 
-                <p><strong>Sessions last 90 minutes</strong></p>
+                    <h2 id="bWellServices-bWellCouplesTherapy">bWell Couples Therapy </h2>
+                    <p>We hope to offer a calm, reflective perspective and space to help you feel centred in your most important relationships.</p>
+                    <p><strong>Sessions last 90 minutes</strong></p>
             </div>
         </div>
     </section>
@@ -399,17 +421,16 @@
                 <p>I was lucky to hear Psychologist Dorothy Rowe speak about depression and the way she described it as a ‘prison’ really struck a chord with me. That awful feeling of being stuck, trapped, enmeshed, alone and imprisoned in your mind. Our ethos on depression is to help you to identify and change negative depression spirals. To defeat rumination which is so strongly related with depression.</p>
                 <p>It can be normal to feel down sometimes, this is not depression. We can help you through difficult episodes, equipping you with tools and techniques that can improve the quality of your life. We monitor and assess your thought processes and help you see how you can change destructive thought processes into constructive thoughts and emotions.</p>
                 <p>We also really listen to those key words, and moments of sadness, loss and despair. We nurture with compassion focused therapy to heal, process and allow you to be. We incorporate mindfulness based cognitive therapy to recognise the frustrations of where you are, how you feel and the often distressing gap to where you want to be. Compassion, self-soothing techniques and emotion focused therapy are evidence based and soothing.</p>
-                    
-                    <br/><h2>Classification: </h2>
-                    <p>The DSM (Diagnostic Statistical Manual) is a Psychological manual classifies depression as:</p>
-                    Symptoms cause clinically significant stress or impairment in social, occupational, or other important areas of functioning
-                    <br/>
-                <br/><strong>Duration of symptoms:</strong>
-                    Most of the day, nearly every day for at least two weeks.
-                    <br/>
-                    <br/><h2>Severity: </h2>
-                    <br/>Five or more of the following symptoms at least one symptoms is either depressed or loss of interest or pleasure:
-                    <br/> </p>
+                <br/>
+                <h2>Classification: </h2>
+                <p>The DSM (Diagnostic Statistical Manual) is a Psychological manual classifies depression as:</p> Symptoms cause clinically significant stress or impairment in social, occupational, or other important areas of functioning
+                <br/>
+                <br/><strong>Duration of symptoms:</strong> Most of the day, nearly every day for at least two weeks.
+                <br/>
+                <br/>
+                <h2>Severity: </h2>
+                <br/>Five or more of the following symptoms at least one symptoms is either depressed or loss of interest or pleasure:
+                <br/> </p>
                 <ul class="tm-bullet-list">
                     <li>Depressed mood</li>
                     <li>Loss of interest</li>
@@ -425,10 +446,8 @@
                     <br/>Episodes of depression can arise as a result of losing a job, marital and relationship problems, prolonged anxiety and many other issues presented by life. The bWell Clinic works from a strengths based model to help you on your journey to reconnect to hope and to renew a sense of personal autonomy and purpose within your life.</p>
                 <p>Depression is a serious illness and we do not interfere with any specified medication prescribed by your Doctor.
                     <br/>
-                   
-                <p>Depression can seriously disrupt the quality of your life and have detrimental effects on your personal, family and professional life as well as loss of appetite, loss of energy, apathy, lack of sleep and in general feeling very low</p>
-                <p>Episodes of depression can arise as a result of losing a job, marital and relationship problems, prolonged anxiety and many other issues we at the bWell team can help you put some lightness back into your life.</p>
-             
+                    <p>Depression can seriously disrupt the quality of your life and have detrimental effects on your personal, family and professional life as well as loss of appetite, loss of energy, apathy, lack of sleep and in general feeling very low</p>
+                    <p>Episodes of depression can arise as a result of losing a job, marital and relationship problems, prolonged anxiety and many other issues we at the bWell team can help you put some lightness back into your life.</p>
             </div>
         </div>
     </section>
@@ -445,8 +464,8 @@
             <div class="panel-body">
                 <p>
                     <br/>We can define stress as a normal physiological response of the body to situations or stimulus which are perceived as 'dangerous' to the body. Stress can affect anyone and everyone at some point of time in their life. When it occurs frequently it affects health - both physical and mental. Stress is the uncomfortable gap between how we would like our life to be and how it actually is. </p>
-                <br/><h2>Eustress</h2>
-                Eustress is healthy for you. It keeps you excited about life. It is basically a desirable form of stress which is healthful and gives a feeling of contentment.
+                <br/>
+                <h2>Eustress</h2> Eustress is healthy for you. It keeps you excited about life. It is basically a desirable form of stress which is healthful and gives a feeling of contentment.
                 <br/>
                 <br/> <strong>Some of the examples of Eustress are: </strong>
                 <br/>
@@ -458,7 +477,8 @@
                     <li>Happiness felt when you feel totally contented</li>
                     <li>Excitement of being in love</li>
                 </ul>
-                <br/><h2>Stress Triggers</h2>
+                <br/>
+                <h2>Stress Triggers</h2>
                 <ul class="tm-bullet-list">
                     <li>Internal</li>
                     <li>External</li>
@@ -475,8 +495,8 @@
                     <li>Burnout</li>
                 </ul>
                 <p>
-                    <br/><h2>Wellbeing Strategies</h2>
-                 </p>
+                    <br/>
+                    <h2>Wellbeing Strategies</h2> </p>
                 <ul class="tm-bullet-list">
                     <li>Exercise - 3 x’s per week</li>
                     <li>Yoga</li>
@@ -496,8 +516,8 @@
                     <li>Go see a therapist</li>
                 </ul>
                 <p>
-                    <br/><h2>Food Glorious Food</h2>
-                 </p>
+                    <br/>
+                    <h2>Food Glorious Food</h2> </p>
                 <ul class="tm-bullet-list">
                     <li>You are what you eat.</li>
                     <li>Eat 3 good meals or 6 smaller ones</li>
@@ -506,8 +526,8 @@
                     <li>Eat out as a treat</li>
                 </ul>
                 <p>
-                    <br/><h2>Bring Stress to a H-A-L-T-S</h2>
-                     </p>
+                    <br/>
+                    <h2>Bring Stress to a H-A-L-T-S</h2> </p>
                 <ul class="tm-bullet-list">
                     <li>Hunger</li>
                     <li>Anger</li>
@@ -516,8 +536,8 @@
                     <li>Scared</li>
                 </ul>
                 <p>
-                    <br/><h2>Stress is one of the major factors that lead to:</h2>
-                </p>
+                    <br/>
+                    <h2>Stress is one of the major factors that lead to:</h2> </p>
                 <ul class="tm-bullet-list">
                     <li>Cardiovascular disease</li>
                     <li>Obesity</li>
@@ -546,10 +566,9 @@
                     <br/>It is important for duty of care to the client to take a multi-disciplinary approach to Anorexia and we collaborate with your GP and Psychiatrist.</p>
                 <p>
                     <br/>Anorexia nervosa is a Psychiatric diagnosis that describes an eating disorder characterized by low body weight and body image distortion with an obsessive fear of gaining weight. Individuals with anorexia often control body weight by voluntary starvation, purging, vomiting, excessive exercise, or other weight control measures, such as diet pills and or laxatives. It primarily affects adolescent females, however approximately 10% of people with the diagnosis are male and this is a growing and worrying trend. Anorexia nervosa is a complex condition, involving psychological, neurobiological, and sociological components.
-                    
                     <br/>
-                    <br/><h2>Diagnosis and Clinical Features </h2>
-                    
+                    <br/>
+                    <h2>Diagnosis and Clinical Features </h2>
                     <br/>The most commonly used criteria for diagnosing anorexia nervosa are from the American Psychiatric Association's Diagnostic and Statistical Manual of Mental Disorders (DSM-IV-TR). To be diagnosed as having anorexia nervosa, according to the DSM-IV-TR, a person must display:
                     <br/> </p>
                 <ol class="tm-numbered-list">
@@ -566,151 +585,150 @@
                         <li><strong>Restricting Type: </strong> during the current episode of anorexia nervosa, the person has not regularly engaged in binge eating or purging behaviour (that is, self-induced vomiting, over-exercise or the misuse of laxatives, diuretics, or enemas)</li>
                         <li><strong>Binge-Eating Type or Purging Type: </strong> during the current episode of anorexia nervosa, the person has regularly engaged in binge-eating OR purging behaviour (that is, self-induced vomiting, over-exercise or the misuse of laxatives, diuretics, or enemas).</li>
                     </ol>
-            
-                    <br/><h2>Physical Symptoms</h2>
                     <br/>
-                        Anorexia nervosa can put a serious strain on many of the body's organs and physiological resources particularly on the:
+                    <h2>Physical Symptoms</h2>
+                    <br/> Anorexia nervosa can put a serious strain on many of the body's organs and physiological resources particularly on the:
+                    <br/>
+                    <br/>
+                    <ul class="tm-bullet-list">
+                        <li>Structure and function of the heart and cardiovascular system.</li>
+                        <li>Typically there can be a disturbed electrolyte balance</li>
+                        <li>Particularly low levels of phosphate, which has been linked to heart failure, muscle weakness, immune dysfunction, and ultimately death.</li>
+                        <li>Those who develop anorexia pre-adulthood may suffer stunted growth and subsequent low levels of essential hormones (including sex hormones) and chronically increased cortisol levels.</li>
+                        <li>Osteoporosis can also develop as a result of anorexia in 38-50% of cases</li>
+                        <li>Poor nutrition leads to the retarded growth of essential bone structure and low bone mineral density.</li>
+                        <li>Anorexia does not harm everyone in the same way. For example, evidence suggests that the results of the disease in adolescents may differ from those in adults.</li>
+                        <li>Changes in brain structure and function are early signs of the condition.</li>
+                        <li>Enlargement of the ventricles of the brain is thought to be associated with starvation, and is partially reversed when normal weight is regained.</li>
+                    </ul>
+                    <p>
                         <br/>
+                        <br/><strong>Other Physical effects may include the following:</strong>
+                        <br/> </p>
+                    <ul class="tm-bullet-list">
+                        <li>Extreme weight loss</li>
+                        <li>Body mass index less than 17.5 in adults, or 85% of expected weight in children</li>
+                        <li>Stunted growth</li>
+                        <li>Endocrine disorder, leading to cessation of periods in girls</li>
+                        <li>Decreased libido; impotence in males</li>
+                        <li>Starvation symptoms, such as reduced metabolism, slow heart rate (bradycardia), hypotension, hypothermia and anaemia</li>
+                        <li>Abnormalities of mineral and electrolyte levels in the body</li>
+                        <li>Thinning of the hair</li>
+                        <li>Growth of lanugo hair over the body</li>
+                        <li>Constantly feeling &quot;cold&quot;</li>
+                        <li>Zinc deficiency</li>
+                        <li>Reduction in white blood cell count</li>
+                        <li>Reduced immune system function</li>
+                        <li>Pallid complexion and sunken eyes</li>
+                        <li>Creaking joints and bones</li>
+                        <li>Collection of fluid in ankles during the day and around eyes during the night</li>
+                        <li>Tooth decay</li>
+                        <li>Constipation</li>
+                        <li>Dry skin</li>
+                        <li>Dry or chapped lips</li>
+                        <li>Poor circulation, resulting in common attacks of 'pins and needles' and purple extremities</li>
+                        <li>In cases of extreme weight loss, there can be nerve deterioration, leading to difficulty in moving the feet</li>
+                        <li>Headaches</li>
+                        <li>Brittle fingernails</li>
+                        <li>Bruising easily</li>
+                    </ul>
+                    <p>
                         <br/>
-                        <ul class="tm-bullet-list">
-                            <li>Structure and function of the heart and cardiovascular system.</li>
-                            <li>Typically there can be a disturbed electrolyte balance</li>
-                            <li>Particularly low levels of phosphate, which has been linked to heart failure, muscle weakness, immune dysfunction, and ultimately death.</li>
-                            <li>Those who develop anorexia pre-adulthood may suffer stunted growth and subsequent low levels of essential hormones (including sex hormones) and chronically increased cortisol levels.</li>
-                            <li>Osteoporosis can also develop as a result of anorexia in 38-50% of cases</li>
-                            <li>Poor nutrition leads to the retarded growth of essential bone structure and low bone mineral density.</li>
-                            <li>Anorexia does not harm everyone in the same way. For example, evidence suggests that the results of the disease in adolescents may differ from those in adults.</li>
-                            <li>Changes in brain structure and function are early signs of the condition.</li>
-                            <li>Enlargement of the ventricles of the brain is thought to be associated with starvation, and is partially reversed when normal weight is regained.</li>
-                        </ul>
-                <p>
+                        <h2>Psychological Symptoms </h2>
+                        <br/> </p>
+                    <ul class="tm-bullet-list">
+                        <li>Distorted body image</li>
+                        <li>Poor insight</li>
+                        <li>Self-evaluation largely, or even exclusively, in terms of their shape and weight</li>
+                        <li>Pre-occupation or obsessive thoughts about food and weight</li>
+                        <li>Perfectionism</li>
+                        <li>Obsessive compulsive disorder (OCD)</li>
+                        <li>Belief that control over food/body is synonymous with being in control of one's life</li>
+                        <li>Refusal to accept that one's weight is dangerously low even when it could be deadly</li>
+                        <li>Refusal to accept that one's weight is normal, or healthy</li>
+                    </ul>
                     <br/>
-                    <br/><strong>Other Physical effects may include the following:</strong>
-                    
-                    <br/> </p>
-                <ul class="tm-bullet-list">
-                    <li>Extreme weight loss</li>
-                    <li>Body mass index less than 17.5 in adults, or 85% of expected weight in children</li>
-                    <li>Stunted growth</li>
-                    <li>Endocrine disorder, leading to cessation of periods in girls</li>
-                    <li>Decreased libido; impotence in males</li>
-                    <li>Starvation symptoms, such as reduced metabolism, slow heart rate (bradycardia), hypotension, hypothermia and anaemia</li>
-                    <li>Abnormalities of mineral and electrolyte levels in the body</li>
-                    <li>Thinning of the hair</li>
-                    <li>Growth of lanugo hair over the body</li>
-                    <li>Constantly feeling &quot;cold&quot;</li>
-                    <li>Zinc deficiency</li>
-                    <li>Reduction in white blood cell count</li>
-                    <li>Reduced immune system function</li>
-                    <li>Pallid complexion and sunken eyes</li>
-                    <li>Creaking joints and bones</li>
-                    <li>Collection of fluid in ankles during the day and around eyes during the night</li>
-                    <li>Tooth decay</li>
-                    <li>Constipation</li>
-                    <li>Dry skin</li>
-                    <li>Dry or chapped lips</li>
-                    <li>Poor circulation, resulting in common attacks of 'pins and needles' and purple extremities</li>
-                    <li>In cases of extreme weight loss, there can be nerve deterioration, leading to difficulty in moving the feet</li>
-                    <li>Headaches</li>
-                    <li>Brittle fingernails</li>
-                    <li>Bruising easily</li>
-                </ul>
-                <p>
-                    <br/><h2>Psychological Symptoms </h2>
+                    <h2>Emotional Symptoms</h2>
                     <br/>
-                    </p>
-                <ul class="tm-bullet-list">
-                    <li>Distorted body image</li>
-                    <li>Poor insight</li>
-                    <li>Self-evaluation largely, or even exclusively, in terms of their shape and weight</li>
-                    <li>Pre-occupation or obsessive thoughts about food and weight</li>
-                    <li>Perfectionism</li>
-                    <li>Obsessive compulsive disorder (OCD)</li>
-                    <li>Belief that control over food/body is synonymous with being in control of one's life</li>
-                    <li>Refusal to accept that one's weight is dangerously low even when it could be deadly</li>
-                    <li>Refusal to accept that one's weight is normal, or healthy</li>
-                </ul>
-                
-                    <br/><h2>Emotional Symptoms</h2>    
+                    <ul class="tm-bullet-list">
+                        <li>Low self-esteem and self-efficacy</li>
+                        <li>Intense fear about becoming overweight</li>
+                        <li>Clinical depression or chronically low mood</li>
+                        <li>Mood swings</li>
+                    </ul>
+                    <p>
+                        <br/>
+                        <h2>Interpersonal and social Symptoms</h2>
+                        <br/> </p>
+                    <ul class="tm-bullet-list">
+                        <li>Withdrawal from previous friendships and other peer-relationships</li>
+                        <li>Deterioration in relationships with the family</li>
+                        <li>Denial of basic needs, such as food and sleep</li>
+                    </ul>
+                    <p>
+                        <br/>
+                        <h2>Behavioural Symptoms</h2>
+                        <br/> </p>
+                    <ul class="tm-bullet-list">
+                        <li>Excessive exercise, food restriction</li>
+                        <li>Secretive about eating or exercise behaviour</li>
+                        <li>Fainting</li>
+                        <li>Self-harm, substance abuse or suicide attempts</li>
+                        <li>Very sensitive to references about body weight</li>
+                        <li>Aggressive when forced to eat &quot;forbidden&quot; foods</li>
+                    </ul>
+                    <p>
+                        <br/>
+                        <h2>Anorexia - Some signs and Symptoms to be aware of:</h2></p>
                     <br/>
-                    
-                <ul class="tm-bullet-list">
-                    <li>Low self-esteem and self-efficacy</li>
-                    <li>Intense fear about becoming overweight</li>
-                    <li>Clinical depression or chronically low mood</li>
-                    <li>Mood swings</li>
-                </ul>
-                <p>
-                    <br/><h2>Interpersonal and social Symptoms</h2>
+                    <ol class="tm-numbered-list">
+                        <li>Dramatic weight loss in a relatively short period of time.</li>
+                        <li>Wearing big or baggy clothes to hide body shape</li>
+                        <li>Obsession with weight and complaining of weight problems</li>
+                        <li>Obsession with calories and fat content of foods</li>
+                        <li>Obsession with continuous exercise</li>
+                        <li>Frequent trips to the bathroom immediately following meals</li>
+                        <li>Visible food restriction and self-starvation.</li>
+                        <li>Visible bingeing and/or purging.</li>
+                        <li>Use or hiding use of diet pills, laxatives, or enemas.</li>
+                        <li>Isolation Fear of eating around and with others.</li>
+                        <li>Shifting the food around on the plate</li>
+                        <li>Hiding food in strange places</li>
+                        <li>Flushing uneaten food down the toilet</li>
+                        <li>Vague or secretive eating patterns</li>
+                        <li>Keeping a &quot;food diary&quot; or lists food and/or exercise</li>
+                        <li>Pre-occupied thoughts of food, weight and cooking</li>
+                        <li>Visiting websites that promote unhealthy ways to lose weight</li>
+                        <li>Reading books about weight loss and eating disorders</li>
+                        <li>Self-defeating statements after food consumption</li>
+                        <li>Hair loss. Pale or &quot;grey&quot; appearance to the skin</li>
+                        <li>Dizziness and headaches</li>
+                        <li>Frequent sore throats and/or swollen glands.</li>
+                        <li>Low self-esteem. Feeling worthless</li>
+                        <li>Need for acceptance and approval from others</li>
+                        <li>Complaints of often feeling cold</li>
+                        <li>Low blood pressure</li>
+                        <li>Loss of menstrual cycle</li>
+                        <li>Constipation or incontinence</li>
+                        <li>Bruised or calluses knuckles</li>
+                        <li>Bloodshot or bleeding in the eyes</li>
+                        <li>Light bruising under the eyes and on the cheeks</li>
+                        <li>Perfectionist personality</li>
+                        <li>Loss of sexual desire or promiscuous relations</li>
+                        <li>Mood swings. Depression. Fatigue</li>
+                        <li>Insomnia. Poor sleeping habits</li>
+                    </ol>
                     <br/>
-                     </p>
-                <ul class="tm-bullet-list">
-                    <li>Withdrawal from previous friendships and other peer-relationships</li>
-                    <li>Deterioration in relationships with the family</li>
-                    <li>Denial of basic needs, such as food and sleep</li>
-                </ul>
-                <p>
-                    <br/><h2>Behavioural Symptoms</h2>
-                <br/>
-                     </p>
-                <ul class="tm-bullet-list">
-                    <li>Excessive exercise, food restriction</li>
-                    <li>Secretive about eating or exercise behaviour</li>
-                    <li>Fainting</li>
-                    <li>Self-harm, substance abuse or suicide attempts</li>
-                    <li>Very sensitive to references about body weight</li>
-                    <li>Aggressive when forced to eat &quot;forbidden&quot; foods</li>
-                </ul>
-                <p>
-                    <br/><h2>Anorexia - Some signs and Symptoms to be aware of:</h2></p>
-                <br/>
-                <ol class="tm-numbered-list">
-                    <li>Dramatic weight loss in a relatively short period of time.</li>
-                    <li>Wearing big or baggy clothes to hide body shape</li>
-                    <li>Obsession with weight and complaining of weight problems</li>
-                    <li>Obsession with calories and fat content of foods</li>
-                    <li>Obsession with continuous exercise</li>
-                    <li>Frequent trips to the bathroom immediately following meals</li>
-                    <li>Visible food restriction and self-starvation.</li>
-                    <li>Visible bingeing and/or purging.</li>
-                    <li>Use or hiding use of diet pills, laxatives, or enemas.</li>
-                    <li>Isolation Fear of eating around and with others.</li>
-                    <li>Shifting the food around on the plate</li>
-                    <li>Hiding food in strange places</li>
-                    <li>Flushing uneaten food down the toilet</li>
-                    <li>Vague or secretive eating patterns</li>
-                    <li>Keeping a &quot;food diary&quot; or lists food and/or exercise</li>
-                    <li>Pre-occupied thoughts of food, weight and cooking</li>
-                    <li>Visiting websites that promote unhealthy ways to lose weight</li>
-                    <li>Reading books about weight loss and eating disorders</li>
-                    <li>Self-defeating statements after food consumption</li>
-                    <li>Hair loss. Pale or &quot;grey&quot; appearance to the skin</li>
-                    <li>Dizziness and headaches</li>
-                    <li>Frequent sore throats and/or swollen glands.</li>
-                    <li>Low self-esteem. Feeling worthless</li>
-                    <li>Need for acceptance and approval from others</li>
-                    <li>Complaints of often feeling cold</li>
-                    <li>Low blood pressure</li>
-                    <li>Loss of menstrual cycle</li>
-                    <li>Constipation or incontinence</li>
-                    <li>Bruised or calluses knuckles</li>
-                    <li>Bloodshot or bleeding in the eyes</li>
-                    <li>Light bruising under the eyes and on the cheeks</li>
-                    <li>Perfectionist personality</li>
-                    <li>Loss of sexual desire or promiscuous relations</li>
-                    <li>Mood swings. Depression. Fatigue</li>
-                    <li>Insomnia. Poor sleeping habits</li>
-                </ol>
+                    <h2>What can you do?</h2>
                     <br/>
-                <h2>What can you do?</h2>
-                    <br/> 
-                <ul class="tm-bullet-list">
-                    <li>It is up to the individual who is experiencing an Eating Disorder to take responsibility for their behaviour.</li>
-                    <li>As a carer you can support but the change must come from the individual with the eating disorder.</li>
-                    <li>Compassion.</li>
-                    <li>Listen.</li>
-                    <li>Understand that the eating disorder is communicating the pain help the person articulate how they feel in a healthier way.</li>
-                    <li>Get professional therapeutic help.</li></ul>
+                    <ul class="tm-bullet-list">
+                        <li>It is up to the individual who is experiencing an Eating Disorder to take responsibility for their behaviour.</li>
+                        <li>As a carer you can support but the change must come from the individual with the eating disorder.</li>
+                        <li>Compassion.</li>
+                        <li>Listen.</li>
+                        <li>Understand that the eating disorder is communicating the pain help the person articulate how they feel in a healthier way.</li>
+                        <li>Get professional therapeutic help.</li>
+                    </ul>
             </div>
         </div>
     </section>
@@ -738,89 +756,87 @@
                     <li>Over-exercising</li>
                 </ul>
                 <p>
-                    <br/><h2>Classification: </h2>
-                    <br/>Eating disorders not otherwise specified (EDNOS) involves disordered eating patterns. EDNOS is described in the DSM-IV-TR as a &quot;category [of] disorders of eating that do not meet the criteria for any specific eating disorder&quot;.
-            
-                <p>The list above is in no way representative of what a sufferer feels or experiences living with the illness. It is important to note that you can still suffer from Bulimia even if one of the below signs are not present. In other words, if you think you have Bulimia, it's dangerous to read the diagnostic criteria and think &quot;I don't have one of the symptoms, so I must not be Bulimic&quot;.</p>
-                <strong>Recurrent episodes of binge eating. An episode of binge eating is characterized by both of the following:</strong>
-                 <ol class="tm-numbered-list">
-                
-                    <br/><li>Eating, in a discrete period of time (e.g., within any 2-hour period), an amount of food that is definitely larger than most people would eat during a similar period of time and under similar circumstances.</li>
-                    <li>A sense of lack of control over eating during the episode (e.g., a feeling that one cannot stop eating or control what or how much one is eating)</li>
-                    <ul class="tm-bullet-list">
-                        <li>Recurrent inappropriate compensatory behaviour in order to prevent weight gain, such as self-induced vomiting; misuse of laxatives, diuretics, enemas, or other medications; fasting; or excessive exercise.</li>
-                        <li>The binge eating and inappropriate compensatory behaviours both occur, on average, at least twice a week for 3 months.</li>
-                        <li>Self-evaluation is unduly influenced by body shape and weight.</li>
-                        <li>The disturbance does not occur exclusively during episodes of Anorexia Nervosa.</li>
-                    </ul>
-                </ol>
-                <p><strong>Purging Type:</strong> during the current episode of Bulimia Nervosa, the person has regularly engaged in self-induced vomiting or the misuse of laxatives, diuretics, or enemas</p>
-                <p><strong>Non-purging Type: </strong>during the current episode of Bulimia Nervosa, the person has used other inappropriate compensatory behaviours, such as fasting or excessive exercise, but has not regularly engaged in self-induced vomiting or the misuse of laxatives, diuretics, or enemas</p>
-    
                     <br/>
-                    <br/><h2>Bulimia - Some signs and Symptoms to be aware of:</h2>
-                <br/>
-                <ol class="tm-numbered-list">
-                    <li>Dramatic weight loss in a relatively short period of time.</li>
-                    <li>Wearing big or baggy clothes to hide body shape</li>
-                    <li>Obsession with weight and complaining of weight problems</li>
-                    <li>Obsession with calories and fat content of foods</li>
-                    <li>Obsession with continuous exercise</li>
-                    <li>Frequent trips to the bathroom immediately following meals</li>
-                    <li>Visible food restriction and self-starvation.</li>
-                    <li>Visible bingeing and/or purging.</li>
-                    <li>Use or hiding use of diet pills, laxatives, or enemas.</li>
-                    <li>Isolation Fear of eating around and with others.</li>
-                    <li>Shifting the food around on the plate</li>
-                    <li>Hiding food in strange places</li>
-                    <li>Flushing uneaten food down the toilet</li>
-                    <li>Vague or secretive eating patterns</li>
-                    <li>Keeping a &quot;food diary&quot; or lists food and/or exercise</li>
-                    <li>Pre-occupied thoughts of food, weight and cooking</li>
-                    <li>Visiting websites that promote unhealthy ways to lose weight</li>
-                    <li>Reading books about weight loss and eating disorders</li>
-                    <li>Self-defeating statements after food consumption</li>
-                    <li>Hair loss. Pale or &quot;grey&quot; appearance to the skin</li>
-                    <li>Dizziness and headaches</li>
-                    <li>Frequent sore throats and/or swollen glands.</li>
-                    <li>Low self-esteem. Feeling worthless</li>
-                    <li>Need for acceptance and approval from others</li>
-                    <li>Complaints of often feeling cold</li>
-                    <li>Low blood pressure</li>
-                    <li>Loss of menstrual cycle</li>
-                    <li>Constipation or incontinence</li>
-                    <li>Bruised or calluses knuckles</li>
-                    <li>Bloodshot or bleeding in the eyes</li>
-                    <li>Light bruising under the eyes and on the cheeks</li>
-                    <li>Perfectionist personality</li>
-                    <li>Loss of sexual desire or promiscuous relations</li>
-                    <li>Mood swings. Depression. Fatigue</li>
-                    <li>Insomnia. Poor sleeping habits </li>
-                </ol>
-                <br/> 
-            
-            <h1 id="bWellServices-CompulsiveOvereating/BingeEatingDisorder">Compulsive Overeating / Binge Eating Disorder</h1> 
-                <br/><ol class="tm-numbered-list">
-                    <li>Fear of not being able to control eating, and while eating, not being able to stop.</li>
-                    <li>Isolation. Fear of eating around and with others.</li>
-                    <li>Chronic dieting on a variety of popular diet plans.</li>
-                    <li>Holding the belief that life will be better if they can lose weight.</li>
-                    <li>Hiding food in strange places (closets, cabinets, suitcases, under the bed) to eat at a later time.</li>
-                    <li>Vague or secretive eating patterns.</li>
-                    <li>Self-defeating statements after food consumption.</li>
-                    <li>Blames failure in social and professional community on weight</li>
-                    <li>Holding the belief that food is their only friend.</li>
-                    <li>Frequently out of breath after relatively light activities.</li>
-                    <li>Excessive sweating and shortness of breath.</li>
-                    <li>High blood pressure and/or cholesterol.</li>
-                    <li>Leg and joint pain.</li>
-                    <li>Weight gain.</li>
-                    <li>Decreased mobility due to weight gain.</li>
-                    <li>Loss of sexual desire or promiscuous relations.</li>
-                    <li>Mood swings. Depression. Fatigue.</li>
-                    <li>Insomnia. Poor Sleeping Habits.</li>
-                </ol>
-            
+                    <h2>Classification: </h2>
+                    <br/>Eating disorders not otherwise specified (EDNOS) involves disordered eating patterns. EDNOS is described in the DSM-IV-TR as a &quot;category [of] disorders of eating that do not meet the criteria for any specific eating disorder&quot;.
+                    <p>The list above is in no way representative of what a sufferer feels or experiences living with the illness. It is important to note that you can still suffer from Bulimia even if one of the below signs are not present. In other words, if you think you have Bulimia, it's dangerous to read the diagnostic criteria and think &quot;I don't have one of the symptoms, so I must not be Bulimic&quot;.</p> <strong>Recurrent episodes of binge eating. An episode of binge eating is characterized by both of the following:</strong>
+                    <ol class="tm-numbered-list">
+                        <br/>
+                        <li>Eating, in a discrete period of time (e.g., within any 2-hour period), an amount of food that is definitely larger than most people would eat during a similar period of time and under similar circumstances.</li>
+                        <li>A sense of lack of control over eating during the episode (e.g., a feeling that one cannot stop eating or control what or how much one is eating)</li>
+                        <ul class="tm-bullet-list">
+                            <li>Recurrent inappropriate compensatory behaviour in order to prevent weight gain, such as self-induced vomiting; misuse of laxatives, diuretics, enemas, or other medications; fasting; or excessive exercise.</li>
+                            <li>The binge eating and inappropriate compensatory behaviours both occur, on average, at least twice a week for 3 months.</li>
+                            <li>Self-evaluation is unduly influenced by body shape and weight.</li>
+                            <li>The disturbance does not occur exclusively during episodes of Anorexia Nervosa.</li>
+                        </ul>
+                    </ol>
+                    <p><strong>Purging Type:</strong> during the current episode of Bulimia Nervosa, the person has regularly engaged in self-induced vomiting or the misuse of laxatives, diuretics, or enemas</p>
+                    <p><strong>Non-purging Type: </strong>during the current episode of Bulimia Nervosa, the person has used other inappropriate compensatory behaviours, such as fasting or excessive exercise, but has not regularly engaged in self-induced vomiting or the misuse of laxatives, diuretics, or enemas</p>
+                    <br/>
+                    <br/>
+                    <h2>Bulimia - Some signs and Symptoms to be aware of:</h2>
+                    <br/>
+                    <ol class="tm-numbered-list">
+                        <li>Dramatic weight loss in a relatively short period of time.</li>
+                        <li>Wearing big or baggy clothes to hide body shape</li>
+                        <li>Obsession with weight and complaining of weight problems</li>
+                        <li>Obsession with calories and fat content of foods</li>
+                        <li>Obsession with continuous exercise</li>
+                        <li>Frequent trips to the bathroom immediately following meals</li>
+                        <li>Visible food restriction and self-starvation.</li>
+                        <li>Visible bingeing and/or purging.</li>
+                        <li>Use or hiding use of diet pills, laxatives, or enemas.</li>
+                        <li>Isolation Fear of eating around and with others.</li>
+                        <li>Shifting the food around on the plate</li>
+                        <li>Hiding food in strange places</li>
+                        <li>Flushing uneaten food down the toilet</li>
+                        <li>Vague or secretive eating patterns</li>
+                        <li>Keeping a &quot;food diary&quot; or lists food and/or exercise</li>
+                        <li>Pre-occupied thoughts of food, weight and cooking</li>
+                        <li>Visiting websites that promote unhealthy ways to lose weight</li>
+                        <li>Reading books about weight loss and eating disorders</li>
+                        <li>Self-defeating statements after food consumption</li>
+                        <li>Hair loss. Pale or &quot;grey&quot; appearance to the skin</li>
+                        <li>Dizziness and headaches</li>
+                        <li>Frequent sore throats and/or swollen glands.</li>
+                        <li>Low self-esteem. Feeling worthless</li>
+                        <li>Need for acceptance and approval from others</li>
+                        <li>Complaints of often feeling cold</li>
+                        <li>Low blood pressure</li>
+                        <li>Loss of menstrual cycle</li>
+                        <li>Constipation or incontinence</li>
+                        <li>Bruised or calluses knuckles</li>
+                        <li>Bloodshot or bleeding in the eyes</li>
+                        <li>Light bruising under the eyes and on the cheeks</li>
+                        <li>Perfectionist personality</li>
+                        <li>Loss of sexual desire or promiscuous relations</li>
+                        <li>Mood swings. Depression. Fatigue</li>
+                        <li>Insomnia. Poor sleeping habits </li>
+                    </ol>
+                    <br/>
+                    <h1 id="bWellServices-CompulsiveOvereating/BingeEatingDisorder">Compulsive Overeating / Binge Eating Disorder</h1>
+                    <br/>
+                    <ol class="tm-numbered-list">
+                        <li>Fear of not being able to control eating, and while eating, not being able to stop.</li>
+                        <li>Isolation. Fear of eating around and with others.</li>
+                        <li>Chronic dieting on a variety of popular diet plans.</li>
+                        <li>Holding the belief that life will be better if they can lose weight.</li>
+                        <li>Hiding food in strange places (closets, cabinets, suitcases, under the bed) to eat at a later time.</li>
+                        <li>Vague or secretive eating patterns.</li>
+                        <li>Self-defeating statements after food consumption.</li>
+                        <li>Blames failure in social and professional community on weight</li>
+                        <li>Holding the belief that food is their only friend.</li>
+                        <li>Frequently out of breath after relatively light activities.</li>
+                        <li>Excessive sweating and shortness of breath.</li>
+                        <li>High blood pressure and/or cholesterol.</li>
+                        <li>Leg and joint pain.</li>
+                        <li>Weight gain.</li>
+                        <li>Decreased mobility due to weight gain.</li>
+                        <li>Loss of sexual desire or promiscuous relations.</li>
+                        <li>Mood swings. Depression. Fatigue.</li>
+                        <li>Insomnia. Poor Sleeping Habits.</li>
+                    </ol>
             </div>
         </div>
     </section>
@@ -835,21 +851,20 @@
             <div class="panel-heading">
                 <h1 id="bWellServices-Self-esteem">Self-esteem</h1> </div>
             <div class="panel-body">
-                 <h2> Overview </h2>
-                    Self-esteem reflects a person's overall evaluation or appraisal of her or his own worth.
-                    <br/>The relationship that you have with yourself affects every thought and every decision that you have. It affects how you experience life and even how you ‘hear’ and perceive situations. If you have low self-esteem often you perceive situations, conversations from a negative filter often feeling attacked or like it’s a personal insult. This can make life very hard.
-                    <br/>
-                    <br/>Self-esteem encompasses three aspects of your own beliefs, emotions and behaviours:
-                    <br/>
-                    <ol class="tm-numbered-list"> 
-                        <li><strong>Beliefs:</strong> ‘I am competent/incompetent’</li>
-                        <li><strong>Emotions:</strong> triumph/despair or pride/shame</li>
-                        <li><strong>Behaviour may reflect self-esteem:</strong> assertiveness/timidity, confidence/caution</li>
-                    </ol>
-                    <br/>Self-esteem can apply specifically to a particular dimension &quot;I believe I am a good at drawing, and feel proud of that in particular&quot; or have global extent, &quot;I believe I am a good person, and feel proud of myself in general&quot;.
-                    <br/>Self-esteem can include our own sense of:
-                    <br/> 
-                    <br/>
+                <h2> Overview </h2> Self-esteem reflects a person's overall evaluation or appraisal of her or his own worth.
+                <br/>The relationship that you have with yourself affects every thought and every decision that you have. It affects how you experience life and even how you ‘hear’ and perceive situations. If you have low self-esteem often you perceive situations, conversations from a negative filter often feeling attacked or like it’s a personal insult. This can make life very hard.
+                <br/>
+                <br/>Self-esteem encompasses three aspects of your own beliefs, emotions and behaviours:
+                <br/>
+                <ol class="tm-numbered-list">
+                    <li><strong>Beliefs:</strong> ‘I am competent/incompetent’</li>
+                    <li><strong>Emotions:</strong> triumph/despair or pride/shame</li>
+                    <li><strong>Behaviour may reflect self-esteem:</strong> assertiveness/timidity, confidence/caution</li>
+                </ol>
+                <br/>Self-esteem can apply specifically to a particular dimension &quot;I believe I am a good at drawing, and feel proud of that in particular&quot; or have global extent, &quot;I believe I am a good person, and feel proud of myself in general&quot;.
+                <br/>Self-esteem can include our own sense of:
+                <br/>
+                <br/>
                 <ul class="tm-bullet-list">
                     <li>Self-worth</li>
                     <li>Self-regard</li>
@@ -859,36 +874,51 @@
                 </ul>
                 <p>
                     <br/>Self-esteem is distinct from self-confidence and self-efficacy, which involve beliefs about ability and future performance.
-                    
                     <br/>
-                    <br/><h2>Definition of Self-Esteem</h2>
-                    
+                    <br/>
+                    <h2>Definition of Self-Esteem</h2>
                     <br/>Nathaniel Branden in 1969 briefly defined self-esteem as:
                     <br/>‘the experience of being competent to cope with the basic challenges of life and being worthy of happiness&quot;.
                     <br/>
                     <br/>Branden’s (1969) description of self-esteem includes the following primary properties:
                     <br/>
-                <ol class="tm-numbered-list">
-                    <li>Self-esteem as a basic human need, ‘it makes an essential contribution to the life process&quot;, &quot;…is indispensable to normal and healthy self-development, and has a value for survival.&quot;</li>
-                    <li>Self-esteem as an automatic and inevitable consequence of the sum of individuals' choices in using their consciousness</li>
-                    <li>Something experienced as a part of, or background to, all of the individuals thoughts, feelings and actions.</li>
-                </ol>
-            <p>
-                    <br/>High self-esteem correlates highly with self-reported happiness.
-                    <br/>
-                    <br/><strong>Therapy can help you: </strong>
-                <ul class="tm-bullet-list"> 
-                    <li>Learn self-compassion and self-acceptance</li>
-                    <li>Perceive yourself in a true and balanced way</li>
-                    <li>Increase your self-esteem</li>
-                    <li>Challenging negative self-talk and building a realistic self-belief</li>
-                    <li>Recovery from criticism and build resilience</li>
-                </ul>
+                    <ol class="tm-numbered-list">
+                        <li>Self-esteem as a basic human need, ‘it makes an essential contribution to the life process&quot;, &quot;…is indispensable to normal and healthy self-development, and has a value for survival.&quot;</li>
+                        <li>Self-esteem as an automatic and inevitable consequence of the sum of individuals' choices in using their consciousness</li>
+                        <li>Something experienced as a part of, or background to, all of the individuals thoughts, feelings and actions.</li>
+                    </ol>
+                    <p>
+                        <br/>High self-esteem correlates highly with self-reported happiness.
+                        <br/>
+                        <br/><strong>Therapy can help you: </strong>
+                        <ul class="tm-bullet-list">
+                            <li>Learn self-compassion and self-acceptance</li>
+                            <li>Perceive yourself in a true and balanced way</li>
+                            <li>Increase your self-esteem</li>
+                            <li>Challenging negative self-talk and building a realistic self-belief</li>
+                            <li>Recovery from criticism and build resilience</li>
+                        </ul>
             </div>
         </div>
     </section>
 </div>
 <!-- END PANEL FOR SELF ESTEEM BODY CONTENT -->
+</br>
+<!-- START PANEL FOR CORPORATEBODY CONTENT - put it in a container to avoid taking full width of screen -->
+<div class="container" id="corporate">
+    <section>
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <h1 id="bWellServices-Corporate">bWell Corporate Services</h1> </div>
+            <div class="panel-body">
+                <h2> Overview </h2> As a Work and Organisational Psychologist we can provide evidence based strategies to create a proactive, focused and emotionally flourishing workforce. Redundancy Counselling Change Management Cultural Diversity Training Executive Coaching Life -Work Balance Group Stop Smoking Healthy Workforce Programmes Anti-Bullying Training Team Building bWell Wellbeing Workshops
+                <br/>
+                <br/>Disclaimer: The particulars and any price lists contained on this website do not form part of any contract and are for guidance only. </div>
+        </div>
+    </section>
+</div>
+<!-- END PANEL FOR BWELL CORPORATE BODY CONTENT -->
 </br>
 <!-- Contact Us  -->
 <div class="container ">
