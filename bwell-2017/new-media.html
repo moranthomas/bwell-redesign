@@ -1,34 +1,27 @@
-<script src="js/jquery.min.js"> </script>
+<script src="js/jquery.min.js">
+</script>
 <script>
     var isMobile = false; //initiate as false
     if (/Mobi/.test(navigator.userAgent)) {
         isMobile = true;
     }
-
     $('#either-gif-or-video').each(function () {
-        if(isMobile) {  
+        if (isMobile) {
             $('#fullscreen-image').each(function () {
-                this.src='images/zen-video-still.png';
+                this.src = 'images/zen-video-still.png';
             });
         }
-        else { 
+        else {
             $('video').each(function () {
-                this.src='videos/zen_nature_video.mp4';
-            });                   
+                this.src = 'videos/zen_nature_video.mp4';
+            });
         }
-
-    }); 
+    });
 </script>
-
 <section class=" mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-after-navbar" id="header1-40">
-    
     <div id="either-gif-or-video">
         <video loop muted autoplay class="fullscreen-bg_video" preload="none">
-            <source src="" type="video/mp4"> 
-        </video>
-        <img id="fullscreen-image" src="" class="fullscreen-bg_video">
-    </div>
-    
+            <source src="" type="video/mp4"> </video> <img id="fullscreen-image" src="" class="fullscreen-bg_video"> </div>
     <!--data-bg-video="https://www.youtube.com/watch?v=bLth7jFy3mI&feature=youtu.be"> -->
     <!--<video loop muted autoplay class="fullscreen-bg_video" poster="images/zen-video-still.png">
         <source src="videos/zen_nature_video.mp4" type="video/mp4"> </video>
@@ -70,49 +63,14 @@
         </div>
     </div>
 </section>
-<section class="content-2 col-2" id="social" style="background-color: rgb(255, 255, 255);">
-    <div class="container" id="social">
-        <h2> Social </h2>
-        <div class="row">
-            <div>
-                <div class="thumbnail"> <a class="twitter-timeline" href="https://twitter.com/AllisonKeating1" style="padding:20px;" data-widget-id="724343732183674880"> Tweets by @AllisonKeating1</a>
-                    <script>
-                        ! function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0]
-                                , p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");
-                    </script>
-                </div>
-            </div>
-            <!-- <div>
-                    <div class="thumbnail">
-                        <!-- note I can also include the facebook sdk javascript instead of using iframes here -->
-            <!-- <div class="col-sm-5 facebook-title">
-                            <h3>bWell on  </h3> </div>
-                        <div class="col-sm-5 facebook-title-logo"> <img class="img-responsive" src="images/facebook_2015_logo.png"> </div>
-                        <div class="col-sm-2"> </div>
-                    </div>
-                    <div style="padding:20px;">
-                        <iframe src="https://www.facebook.com/plugins/page.php? href=https%3A%2F%2Fwww.facebook.com%2FbWellClinicAllisonKeating&tabs=timeline&width=650&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="650" height="500" style="border:none;overflow:hidden" scrolling=" no " frameborder="0 " allowTransparency="true "> </iframe>
-                    </div>
-                </div>  --></div>
-    </div>
-    </div>
-</section>
 <!-- MEDIA SECTION -->
 <div class="container ">
     <section>
-        <div class="page-header custom_padding " id="media">
+        <div class="page-header custom_padding ">
             <h2> bWell Media Coverage </h2>
+            <hr>
             <div class="row ">
-                <div class="col-sm-4 ">
-                    <h3> TV </h3>
+                <div class="col-sm-4" id="media-tv">
                     <div class="thumbnail ">
                         <!--<iframe sandbox="allow-same-origin allow-scripts allow-popups " id="foo " width="350 " height="300 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " src="https://youtu.be/viwAlRh61rs "> </iframe> -->
                         <iframe width="350 " height="300 " src="https://www.youtube.com//embed/viwAlRh61rs "> </iframe>
@@ -125,6 +83,33 @@
                     </div>
                 </div>
                 <div class="col-sm-4 ">
+                    <div class="thumbnail ">
+                        <!--<iframe sandbox="allow-same-origin allow-scripts allow-popups " id="foo " width="350 " height="300 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " src="https://youtu.be/viwAlRh61rs "> </iframe> -->
+                        <iframe width="350 " height="300 " src="https://www.youtube.com/embed/PulBvULSSKo"> </iframe>
+                        <div class="caption ">
+                            <div>
+                                <h3>Sunday AM TV3</h3>
+                                <p>Psychology of Choice - Apr 2, 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 ">
+                    <div class="thumbnail ">
+                        <!--<iframe sandbox="allow-same-origin allow-scripts allow-popups " id="foo " width="350 " height="300 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " src="https://youtu.be/viwAlRh61rs "> </iframe> -->
+                        <iframe width="350 " height="300 " src="https://www.youtube.com/embed/VfY48MHA1Ng"> </iframe>
+                        <div class="caption ">
+                            <div>
+                                <h3>Sunday AM TV3</h3>
+                                <p>International Honesty Day - Apr 30, 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Row -->
+            <div class="row">
+                <div class="col-sm-4" id="media-radio">
                     <h3> Radio </h3>
                     <table class="table table-striped ">
                         <thead>
@@ -136,32 +121,53 @@
                         <tbody>
                             <tr>
                                 <td>Spin 103.8</td>
-                                <td>Cork is Ireland's most honest city (audio) </td>
+                                <td>Cork is Ireland's most honest city (audio)
+                                    <audio controls>
+                                        <source src="/audio/dishonesty-Spin-103.8-020310.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Spin 103.8</td>
-                                <td>Food Addictions</td>
+                                <td>Food Addictions
+                                    <audio controls>
+                                        <source src="/audio/Food-Addictions.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Limerick Today</td>
-                                <td>Dentaphobia - Fear of the dentist</td>
+                                <td>Dentaphobia - Fear of the dentist
+                                    <audio controls>
+                                        <source src="/audio/Allison_Keating_on_fear_of_dentist.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Spin 103.8</td>
-                                <td>Shyness</td>
+                                <td>Shyness
+                                    <audio controls>
+                                        <source src="/audio/Shyness_AlisonKeating.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Newstalk</td>
-                                <td>Culture Shock with Fionn Davenport</td>
+                                <td>Culture Shock with Fionn Davenport
+                                    <audio controls>
+                                        <source src="/audio/Newstalk-106-culture-shock-fionn-phobias.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+                                </td>
                             </tr>
                             <tr>
                                 <td>98FM</td>
-                                <td>Fear of cotton wool, water, vomiting and many more</td>
+                                <td>Fear of cotton wool, water, vomiting and many more
+                                    <audio controls>
+                                        <source src="/audio/phobias-bwell-98fm-2007.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="col-sm-4 ">
+            </div>
+            <!-- End Row -->
+            <div class="row ">
+                <div class="col-sm-8" id="media-print">
                     <h3> Print </h3>
                     <table class="table table-striped ">
                         <thead>
@@ -205,6 +211,48 @@
     </section>
 </div>
 <!-- END MEDIA SECTION -->
+<!-- SOCIAL SECTION -->
+<section class="content-2 col-2" id="social" style="background-color: rgb(255, 255, 255);">
+    <div class="container" id="social">
+        <h2> Social </h2>
+        <div class="row">
+            <div>
+                <div class="thumbnail"> <a class="twitter-timeline" href="https://twitter.com/AllisonKeating1" style="padding:20px;" data-widget-id="724343732183674880"> Tweets by @AllisonKeating1</a>
+                    <script>
+                        ! function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0]
+                                , p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="content-2 col-2" id="social" style="background-color: rgb(255, 255, 255);">
+    <div class="container ">
+        <div>
+            <div class="thumbnail">
+                <!-- note I can also include the facebook sdk javascript instead of using iframes here -->
+                <div class="col-sm-5 facebook-title"> <img class="img-responsive" src="images/facebook_2015_logo.png">
+                    <!-- <h3>bWell on  </h3> 
+                <div class="col-sm-5 facebook-title-logo"> </div> -->
+                    <!--<div class="col-sm-2"> </div> </div> -->
+                    <div style="padding:20px;">
+                        <iframe src="https://www.facebook.com/plugins/page.php? href=https%3A%2F%2Fwww.facebook.com%2FbWellClinicAllisonKeating&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" height="500" style="border:none;overflow:hidden" scrolling=" no " frameborder="0 " allowTransparency="true "> </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- END SOCIAL SECTION -->
 <!-- Contact Us  -->
 <div class="container ">
     <section>
