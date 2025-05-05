@@ -2,6 +2,13 @@
     padding-left: 35px;
 }
 
+.tm-image-responsive-aideen {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 63%;
+}
+
 .tm-numbered-list {
     padding-left: 35px;
 }
