@@ -42,6 +42,11 @@
                         <nav class="bwell-navbar__menu-box bwell-navbar__menu-box--inline-right">
                             <div class="bwell-navbar__column">
                                 <ul class="bwell-navbar__items bwell-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
+                                    <li class="bwell-navbar__item tm-nav">
+                                        <a href="https://app.acuityscheduling.com/schedule.php?owner=32910341&ref=booking_button" target="_blank" class="acuity-embed-button" style="background: #5fb8b9; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+                                        <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/32910341.css" id="acuity-button-styles" />
+                                        <script src="https://embed.acuityscheduling.com/embed/button/32910341.js" async></script>
+                                    </li>
                                     <li class="bwell-navbar__item dropdown"> <a class="dropdown-toggle mbr-buttons__link btn text-white" data-toggle="dropdown" href="#">About bWell<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li class="tm-nav" data-page="new-about-bwell#philosophy"><a class="mbr-buttons__link btn text-white" href="#">Our Philosophy</a></li>
@@ -66,10 +71,9 @@
                                             <li class="tm-nav" data-page="new-media#media-radio"><a class="mbr-buttons__link btn text-white" href="#">Radio</a></li>
                                             <li class="tm-nav" data-page="new-media#media-print"><a class="mbr-buttons__link btn text-white" href="#">Print</a></li>
                                         </ul>
-                                    </li>
-                                    <li class="bwell-navbar__item tm-nav" data-page="new-about-bwell#clinic-gallery"><a class="mbr-buttons__link btn text-white" href="#clinic-gallery">Gallery</a></li>
+                                    </li>                                
                                     <li class="bwell-navbar__item tm-nav" data-page="new-about-bwell#contact"><a class="mbr-buttons__link btn text-white" href="#contact">Contact</a> </li>
-                                    <li class="bwell-navbar__item tm-nav" data-page="new-about-bwell#header1-40"><a class="mbr-buttons__btn btn btn-default tm-button-white" id="home_button" href="#">Home</a></li>
+                                    <!-- <li class="bwell-navbar__item tm-nav" data-page="new-about-bwell#header1-40"><a class="mbr-buttons__btn btn btn-default tm-button-white" id="home_button" href="#">Home</a></li> -->                                
                                 </ul>
                             </div>
                         </nav>
@@ -86,7 +90,7 @@
             <div class="mbr-footer text-center">
                 <div class="col-sm-12 ">
                     <p class="mbr-footer__copyright "></p>
-                    <p>Copyright &copy 2025 bWell Clinic. </p>
+                    <p>Copyright &copy; <span id="copyright-year"></span> bWell Clinic. </p>
                 </div>
             </div>
         </div>
@@ -105,6 +109,9 @@
     <script src="js/mobirise-gallery-script.js "></script>
     <script>
         $(document).ready(function () {
+            // Set current year in copyright
+            $('#copyright-year').text(new Date().getFullYear());
+
             $(".content-section").load("new-about-bwell.html");
             $(".tm-nav").each(function () {
                 $(this).on('click', function () {
