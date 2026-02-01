@@ -112,30 +112,40 @@
             $('#copyright-year').text(new Date().getFullYear());
 
             $(".content-section").load("about.html");
-            $(".tm-nav").each(function () {
-                $(this).on('click', function () {
-                    var elem = $(this);
-                    var data_page = elem.attr('data-page');
-                    if (data_page.includes('#')) {
-                        var main_page = data_page.slice(0, data_page.indexOf('#'));
-                        var section = data_page.slice(data_page.indexOf('#'), data_page.length);
-                        // Load the main html page extracted from the data-page attribute 
+
+            // Use event delegation to handle tm-nav clicks for dynamically loaded content
+            $(document).on('click', '.tm-nav', function (e) {
+                e.preventDefault();
+                var elem = $(this);
+                var data_page = elem.attr('data-page');
+
+                if (data_page && data_page.includes('#')) {
+                    var main_page = data_page.slice(0, data_page.indexOf('#'));
+                    var section = data_page.slice(data_page.indexOf('#'), data_page.length);
+
+                    // Check if we need to load a different page
+                    if (main_page && main_page !== 'about') {
+                        // Load the main html page extracted from the data-page attribute
                         $(".content-section").load(main_page + ".html" + section, function () {
-                            // Note - had to put this code in callback as load method was not returning in time 
-                            // Next scroll to the section located identified by the class extracted from the data-page attribute 
+                            // Scroll to the section after page loads
                             console.log("section = " + section);
                             console.log("main_page = " + main_page);
                             $('html, body').animate({
                                 scrollTop: $(section).offset().top
                             }, 'slow');
                         });
+                    } else {
+                        // Already on the right page, just scroll to section
+                        $('html, body').animate({
+                            scrollTop: $(section).offset().top
+                        }, 'slow');
                     }
-                    else {
-                        /* THIS SECTION IS FOR SIMPLE LINKS - DEFAULT NOT SURE IF I WILL NEED IT */
-                        $(".content-section").load(data_page + ".html");
-                    }
-                });
+                } else if (data_page) {
+                    /* THIS SECTION IS FOR SIMPLE LINKS - DEFAULT NOT SURE IF I WILL NEED IT */
+                    $(".content-section").load(data_page + ".html");
+                }
             });
+
             $(this).on('beforeunload', function () {
                 $("video").hide();
             });
