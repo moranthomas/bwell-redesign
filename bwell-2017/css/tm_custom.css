@@ -1,3 +1,18 @@
+.tm-bullet-list {
+    padding-left: 35px;
+}
+
+.tm-image-responsive-aideen {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 63%;
+}
+
+.tm-numbered-list {
+    padding-left: 35px;
+}
+
 .navbar_custom {
     /*background: #2c2c2c;*/
     position: fixed;
@@ -13,7 +28,6 @@
     position: relative;
     top: 6px;
     bottom: 10px;
-    
 }
 
 .dropdown-menu {
@@ -55,7 +69,7 @@
 }
 
 .fullscreen-bg {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     right: 0;
     bottom: 0;
@@ -89,11 +103,12 @@
 @media (max-width: 767px) {
     .fullscreen-bg {
         /*background: url('http://dev2.slicejack.com/fullscreen-video-demo/img/videoframe.jpg') center center / cover no-repeat;*/
-        background: url('images/bamboo.jpg') center center / cover no-repeat; 
+        background: url('images/bamboo.jpg') center center / cover no-repeat;
     }
     .fullscreen-bg_video {
         /*display: none;*/
         /*background: url('http://dev2.slicejack.com/fullscreen-video-demo/img/videoframe.jpg') center center / cover no-repeat;*/
+        /*background: url('images/zen-video-still') center center / cover no-repeat;*/
     }
     #landing_title {
         padding-top: 40px;
@@ -172,15 +187,17 @@
     text-decoration: none;
 }
 
-
-
-.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
     color: #fff;
     background-color: transparent;
     border-color: white;
     text-decoration: none;
 }
-
 
 .therapies-font {
     color: white;
@@ -196,7 +213,7 @@
     font-size: 17px;
     line-height: 27px;
     text-align: left;
-    position: relative; 
+    position: relative;
     margin-top: -21px;
     top: 14px;
     left: 20px;
@@ -211,4 +228,3 @@
     padding-bottom: 40px;
     padding-top: 93px;
 }
-

@@ -1,0 +1,7 @@
+# robots.txt file for go2.ie
+
+# disallow robots into our scripts, etc.
+User-agent: *
+Disallow: /_
+Disallow: /sevenstar/Main/_add_to_quote
+
